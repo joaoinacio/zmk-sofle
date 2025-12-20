@@ -11,8 +11,9 @@
 
 &mt {
     flavor = "tap-preferred";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <180>;
     require-prior-idle-ms = <200>;
+    tapping-term-ms = <220>;
 };
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
