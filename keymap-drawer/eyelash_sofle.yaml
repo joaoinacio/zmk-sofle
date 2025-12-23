@@ -61,7 +61,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: num}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: num_sym}
   - RIGHT GUI
   - $$mdi:apple-keyboard-option$$
   - {t: ']', s: '}'}
@@ -123,14 +123,14 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '[', s: '{'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - {t: ']', s: '}'}
-  - {t: num, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: num_sym, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  num:
+  num_sym:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
@@ -161,11 +161,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - {t: '6', s: ^}
+  - {t: '6', h: '$$mdi:apple-keyboard-shift$$'}
   - KP EQUAL
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '4'
+  - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - KP EQUAL
