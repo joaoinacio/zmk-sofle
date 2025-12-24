@@ -115,7 +115,7 @@
 
         softoff {
             bindings = <&soft_off>;
-            key-positions = <12 0>;
+            key-positions = <0 39>;
         };
 
         tog1 {
