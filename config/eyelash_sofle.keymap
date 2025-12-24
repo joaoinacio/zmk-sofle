@@ -76,9 +76,9 @@
         hold-trigger-key-positions = <34 35 36 37 11 12 21 22 23 24 25 34 35 36 37 38 47 48 49 50 51 7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 60 61 62 63 59>;
     };
 
-    capsw_colemak: capsw_colemak {
+    caps_word_colemak: caps_word_colemak {
         compatible = "zmk,behavior-caps-word";
-        label = "CAPSW_COLEMAK";
+        label = "CAPS_WORD_COLEMAK";
         #binding-cells = <0>;
         continue-list = <SEMICOLON COLON>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -97,20 +97,20 @@
     };
 
     macros {
-        capsword_colemak: caps_colemak {
+        capsw_colemak: caps_colemak {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&caps_word &tog 4>;
+            bindings = <&macro_tap>, <&caps_word_colemak &tog 4>;
 
             label = "CAPS_COLEMAK";
         };
 
-        caps_colemak_o_return: caps_colemak_return {
+        capsw_colemak_o_return: capsw_colemak_return {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LS(SEMI) &tog 4>;
 
-            label = "CAPS_COLEMAK_RETURN";
+            label = "CAPSW_COLEMAK_RETURN";
         };
     };
 
@@ -132,11 +132,11 @@
 
         nav {
             bindings = <
-&kp F1             &kp F2         &kp F3        &kp F4     &kp F5          &kp F6    &mmv MOVE_UP     &kp F7         &kp F8     &kp F9          &kp F10    &kp F11     &kp F12
-&trans             &trans         &trans        &trans     &trans          &trans    &mmv MOVE_DOWN   &kp PAGE_UP    &kp HOME   &kp UP_ARROW    &kp END    &kp INSERT  &kp PRINTSCREEN
-&kp CAPSLOCK       &sk LEFT_GUI   &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &trans    &mmv MOVE_LEFT   &kp PAGE_DOWN  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &trans
-&capsword_colemak  &kp LC(LG(Z))  &trans        &trans     &trans          &trans    &mmv MOVE_RIGHT  &trans         &kp LC(V)  &kp LC(C)       &kp LC(X)  &trans      &trans
-&kp C_MUTE         &trans         &trans        &trans     &trans          &trans    &mkp LCLK        &trans         &to 2      &trans          &trans     &trans
+&kp F1          &kp F2         &kp F3        &kp F4     &kp F5          &kp F6    &mmv MOVE_UP     &kp F7         &kp F8     &kp F9          &kp F10    &kp F11     &kp F12
+&trans          &trans         &trans        &trans     &trans          &trans    &mmv MOVE_DOWN   &kp PAGE_UP    &kp HOME   &kp UP_ARROW    &kp END    &kp INSERT  &kp PRINTSCREEN
+&kp CAPSLOCK    &sk LEFT_GUI   &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &trans    &mmv MOVE_LEFT   &kp PAGE_DOWN  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &trans
+&capsw_colemak  &kp LC(LG(Z))  &trans        &trans     &trans          &trans    &mmv MOVE_RIGHT  &trans         &kp LC(V)  &kp LC(C)       &kp LC(X)  &trans      &trans
+&kp C_MUTE      &trans         &trans        &trans     &trans          &trans    &mkp LCLK        &trans         &to 2      &trans          &trans     &trans
             >;
 
             display-name = "layer1";
@@ -167,10 +167,10 @@
 
         caps_colemak {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &caps_colemak_o_return  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &capsw_colemak_o_return  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
