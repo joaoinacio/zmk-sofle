@@ -17,28 +17,28 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: config}
   - Q
   - W
-  - E
-  - R
-  - T
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - Y
-  - U
-  - I
-  - O
+  - F
   - P
+  - G
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - J
+  - L
+  - U
+  - Y
+  - {t: ;, s: ':'}
   - {t: \, s: '|'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - G
+  - D
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - L
-  - {t: ;, s: ':'}
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: O, h: RIGHT GUI}
   - {t: '''', s: '"'}
   - {t: '`', h: '$$mdi:apple-keyboard-shift$$', s: '~'}
   - Z
@@ -47,7 +47,7 @@ layers:
   - V
   - B
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - N
+  - K
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
