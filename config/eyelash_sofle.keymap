@@ -136,7 +136,7 @@
         capsw_colemak: caps_colemak {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&caps_word_colemak &tog 5>;
+            bindings = <&macro_tap>, <&caps_word_colemak &tog 4>;
 
             label = "CAPS_COLEMAK";
         };
@@ -144,7 +144,7 @@
         capsw_colemak_o_return: capsw_colemak_return {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LS(SEMI) &tog 5>;
+            bindings = <&macro_tap>, <&kp LS(SEMI) &tog 4>;
 
             label = "CAPSW_COLEMAK_RETURN";
         };
