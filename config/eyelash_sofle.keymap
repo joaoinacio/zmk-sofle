@@ -93,6 +93,20 @@
         bindings = <&capsw_colemak>, <&kp CAPSLOCK>;
     };
 
+    td_mo1_to2: td_mo1_to2 {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD_MO1_TO2";
+        #binding-cells = <0>;
+        bindings = <&mo 1>, <&tog 2>;
+    };
+
+    td_mo2_to1: td_mo2_to1 {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD_MO2_TO1";
+        #binding-cells = <0>;
+        bindings = <&mo 2>, <&tog 1>;
+    };
+
     behaviors {
     };
 
@@ -101,7 +115,19 @@
 
         softoff {
             bindings = <&soft_off>;
-            key-positions = <14 28 40>;
+            key-positions = <12 0>;
+        };
+
+        tog1 {
+            bindings = <&tog 1>;
+            key-positions = <59 60>;
+            layers = <1>;
+        };
+
+        tog2 {
+            bindings = <&tog 2>;
+            key-positions = <56 57>;
+            layers = <1>;
         };
     };
 
@@ -144,21 +170,21 @@
 &kp F1  &kp F2   &kp F3  &kp F4  &kp F5  &kp F6    &trans  &kp F7         &kp F8     &kp F9          &kp F10    &kp F11     &kp F12
 &trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans  &kp PAGE_UP    &kp HOME   &kp UP_ARROW    &kp END    &kp INSERT  &kp PRINTSCREEN
 &trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans  &kp PAGE_DOWN  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &trans
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans         &kp LC(V)  &kp LC(C)       &kp LC(X)  &kp LC(Z)   &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans  &kp TAB        &kp LC(V)  &kp LC(C)       &kp LC(X)  &kp LC(Z)   &trans
 &trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans         &to 2      &trans          &trans     &trans
             >;
 
-            display-name = "layer1";
+            display-name = "nav";
             sensor-bindings = <&scroll_encoder>;
         };
 
         num_sym {
             bindings = <
-&trans  &trans        &kp ESCAPE  &kp KP_SLASH  &kp KP_MULTIPLY          &kp KP_SUBTRACT    &trans  &trans  &trans                    &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_SUBTRACT  &trans
-&trans  &trans        &kp N7      &kp N8        &kp N9                   &kp KP_PLUS        &trans  &trans  &kp N7                    &kp N8         &kp N9           &kp KP_PLUS      &trans
-&trans  &kp N0        &kp N4      &kp N5        &mt LEFT_SHIFT NUMBER_6  &kp KP_EQUAL       &trans  &trans  &mt RIGHT_SHIFT NUMBER_4  &kp N5         &kp N6           &kp KP_EQUAL     &trans
-&trans  &trans        &kp N1      &kp N2        &kp N3                   &kp KP_ENTER       &trans  &trans  &kp NUMBER_1              &kp NUMBER_2   &kp N3           &kp ENTER        &trans
-&trans  &kp NUMBER_0  &kp INSERT  &kp DELETE    &to 2                    &trans             &trans  &trans  &to 0                     &trans         &trans           &trans
+&trans  &trans  &kp ESCAPE  &kp KP_SLASH  &kp KP_MULTIPLY          &kp KP_SUBTRACT    &trans  &trans  &trans                    &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_SUBTRACT  &trans
+&trans  &trans  &kp N7      &kp N8        &kp N9                   &kp KP_PLUS        &trans  &trans  &kp N7                    &kp N8         &kp N9           &kp KP_PLUS      &trans
+&trans  &kp N0  &kp N4      &kp N5        &mt LEFT_SHIFT NUMBER_6  &kp KP_EQUAL       &trans  &trans  &mt RIGHT_SHIFT NUMBER_4  &kp N5         &kp N6           &kp KP_EQUAL     &trans
+&trans  &trans  &kp N1      &kp N2        &kp N3                   &kp KP_ENTER       &trans  &trans  &kp NUMBER_1              &kp NUMBER_2   &kp N3           &kp ENTER        &trans
+&trans  &trans  &trans      &trans        &to 2                    &trans             &trans  &trans  &to 0                     &trans         &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
