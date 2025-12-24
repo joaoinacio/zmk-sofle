@@ -329,9 +329,9 @@ combos:
 - p: [0, 39]
   k: '&soft_off'
   l: [LAYER0]
-- p: [59, 60]
+- p: [56, 57]
   k: {t: nav, h: toggle}
   l: [LAYER0, nav]
-- p: [56, 57]
+- p: [59, 60]
   k: {t: num_sym, h: toggle}
   l: [LAYER0, num_sym]
