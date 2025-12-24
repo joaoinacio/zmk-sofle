@@ -78,12 +78,11 @@
         hold-trigger-key-positions = <34 35 36 37 11 12 21 22 23 24 25 34 35 36 37 38 47 48 49 50 51 7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 60 61 62 63 59>;
     };
 
-    caps_word_colemak: caps_word_colemak {
+    caps_word_colemak_o: caps_word_colemak_o {
         compatible = "zmk,behavior-caps-word";
-        label = "CAPS_WORD_COLEMAK";
+        label = "CAPS_WORD_COLEMAK_O";
         #binding-cells = <0>;
         continue-list = <SEMICOLON COLON>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     td_capsw_grave: td_capsw_grave {
@@ -136,7 +135,7 @@
         capsw_colemak: caps_colemak {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&caps_word_colemak &tog 4>;
+            bindings = <&macro_tap>, <&caps_word_colemak_o &tog 4>;
 
             label = "CAPS_COLEMAK";
         };
@@ -147,6 +146,14 @@
             bindings = <&macro_tap>, <&kp LS(SEMI) &tog 4>;
 
             label = "CAPSW_COLEMAK_RETURN";
+        };
+
+        capsw_space_ret: capsw_space_ret {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp SPACE &tog 4>;
+
+            label = "CAPSW_SPACE_RET";
         };
     };
 
@@ -203,11 +210,11 @@
 
         caps_colemak {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &capsw_colemak_o_return  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans                   &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans                   &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &capsw_colemak_o_return  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans                   &trans
+&trans  &trans  &trans  &trans  &trans  &capsw_space_ret    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
