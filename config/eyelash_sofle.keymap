@@ -96,6 +96,24 @@
         };
     };
 
+    macros {
+        capsword_colemak: caps_colemak {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&caps_word &tog 4>;
+
+            label = "CAPS_COLEMAK";
+        };
+
+        caps_colemak_o_return: caps_colemak_return {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LS(SEMI) &tog 4>;
+
+            label = "CAPS_COLEMAK_RETURN";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -114,11 +132,11 @@
 
         nav {
             bindings = <
-&kp F1          &kp F2         &kp F3        &kp F4     &kp F5          &kp F6    &mmv MOVE_UP     &kp F7         &kp F8     &kp F9          &kp F10    &kp F11     &kp F12
-&trans          &trans         &trans        &trans     &trans          &trans    &mmv MOVE_DOWN   &kp PAGE_UP    &kp HOME   &kp UP_ARROW    &kp END    &kp INSERT  &kp PRINTSCREEN
-&kp CAPSLOCK    &sk LEFT_GUI   &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &trans    &mmv MOVE_LEFT   &kp PAGE_DOWN  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &trans
-&capsw_colemak  &kp LC(LG(Z))  &trans        &trans     &trans          &trans    &mmv MOVE_RIGHT  &trans         &kp LC(V)  &kp LC(C)       &kp LC(X)  &trans      &trans
-&kp C_MUTE      &trans         &trans        &trans     &trans          &trans    &mkp LCLK        &trans         &to 2      &trans          &trans     &trans
+&kp F1             &kp F2         &kp F3        &kp F4     &kp F5          &kp F6    &mmv MOVE_UP     &kp F7         &kp F8     &kp F9          &kp F10    &kp F11     &kp F12
+&trans             &trans         &trans        &trans     &trans          &trans    &mmv MOVE_DOWN   &kp PAGE_UP    &kp HOME   &kp UP_ARROW    &kp END    &kp INSERT  &kp PRINTSCREEN
+&kp CAPSLOCK       &sk LEFT_GUI   &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &trans    &mmv MOVE_LEFT   &kp PAGE_DOWN  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &trans
+&capsword_colemak  &kp LC(LG(Z))  &trans        &trans     &trans          &trans    &mmv MOVE_RIGHT  &trans         &kp LC(V)  &kp LC(C)       &kp LC(X)  &trans      &trans
+&kp C_MUTE         &trans         &trans        &trans     &trans          &trans    &mkp LCLK        &trans         &to 2      &trans          &trans     &trans
             >;
 
             display-name = "layer1";
@@ -146,14 +164,17 @@
 &trans  &trans          &trans           &trans           &trans           &trans             &trans  &trans           &trans           &trans           &trans           &trans
             >;
         };
-    };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        caps {
-            if-layers = <0>;
-            then-layer = <4>;
+        caps_colemak {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &caps_colemak_o_return  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
+
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
