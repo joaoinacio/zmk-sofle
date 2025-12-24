@@ -57,7 +57,7 @@ layers:
   - {t: '[', s: '{'}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:backspace$$', h: layer1}
+  - {t: '$$mdi:backspace$$', h: nav}
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -65,7 +65,7 @@ layers:
   - RIGHT GUI
   - $$mdi:apple-keyboard-option$$
   - {t: ']', s: '}'}
-  layer1:
+  nav:
   - F1
   - F2
   - F3
@@ -112,7 +112,7 @@ layers:
   - F3
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-tab$$
   - Ctl+V
   - Ctl+C
   - Ctl+X
@@ -184,9 +184,9 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '0'
-  - Ins
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: num_sym, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -326,5 +326,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [14, 28, 40]
+- p: [12, 0]
   k: '&soft_off'
+- p: [59, 60]
+  k: {t: nav, h: toggle}
+  l: [nav]
+- p: [56, 57]
+  k: {t: num_sym, h: toggle}
+  l: [nav]
