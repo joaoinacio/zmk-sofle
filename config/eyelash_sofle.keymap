@@ -214,7 +214,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans                   &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &capsw_colemak_o_return  &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans                   &trans
-&trans  &trans  &trans  &trans  &trans  &capsw_space_ret    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &to 0   &capsw_space_ret    &trans  &trans  &to 0   &trans  &trans  &trans
             >;
         };
     };
