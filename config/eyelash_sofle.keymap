@@ -116,18 +116,19 @@
         softoff {
             bindings = <&soft_off>;
             key-positions = <0 39>;
+            layers = <0>;
         };
 
         tog1 {
             bindings = <&tog 1>;
             key-positions = <59 60>;
-            layers = <1>;
+            layers = <0 1>;
         };
 
         tog2 {
             bindings = <&tog 2>;
             key-positions = <56 57>;
-            layers = <1>;
+            layers = <0 2>;
         };
     };
 
