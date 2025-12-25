@@ -54,7 +54,7 @@ layers:
   - {t: /, s: '?'}
   - {t: \, s: '|'}
   - $$mdi:volume-off$$
-  - sys
+  - adjust
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:backspace$$', h: lower}
@@ -109,7 +109,7 @@ layers:
   - {t: ']', s: '}'}
   - '}'
   - )
-  - _
+  - {t: '=', s: +}
   - ^
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', s: +}
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  sys:
+  adjust:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -317,11 +317,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle}
+  - {t: caps_colemak, h: toggle}
   - '&tap_tog SPACE 4'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&tap_tog ENTER 4'
-  - {t: LAYER0, h: toggle}
+  - {t: caps_colemak, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
