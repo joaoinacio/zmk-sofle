@@ -83,13 +83,7 @@
         label = "CAPS_WORD_COLEMAK_O";
         #binding-cells = <0>;
         continue-list = <SEMICOLON COLON>;
-    };
-
-    td_capsw_grave: td_capsw_grave {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_CAPSW_GRAVE";
-        #binding-cells = <0>;
-        bindings = <&capsw_tog 4>, <&kp GRAVE>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     td_mo1_to2: td_mo1_to2 {
