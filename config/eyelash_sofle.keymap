@@ -100,13 +100,15 @@
         bindings = <&mo 1>, <&tog 3>;
     };
 
-    smart_shift: smart_shift {
+    auto_shift: auto_shift {
         compatible = "zmk,behavior-hold-tap";
-        label = "SMART_SHIFT";
+        label = "Auto Shift";
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <250>;
+        tapping-term-ms = <230>;
+        flavor = "tap-preferred";
+        retro-tap;
     };
 
     behaviors {
@@ -171,11 +173,11 @@
 
         lower {
             bindings = <
-&trans  &trans                                   &trans                               &trans                                           &trans                        &trans           &trans  &trans        &trans        &trans        &trans  &trans           &trans
-&trans  &kp EXCL                                 &kp AT_SIGN                          &kp HASH                                         &kp DOLLAR                    &kp PERCENT      &trans  &kp KP_MINUS  &kp N7        &kp N8        &kp N9  &kp KP_MULTIPLY  &trans
-&trans  &smart_shift LEFT_BRACKET RIGHT_BRACKET  &smart_shift LEFT_BRACE RIGHT_BRACE  &smart_shift LEFT_PARENTHESIS RIGHT_PARENTHESIS  &smart_shift LS(MINUS) MINUS  &kp AMPERSAND    &trans  &kp KP_PLUS   &kp NUMBER_4  &kp N5        &kp N6  &kp NUMBER_0     &trans
-&trans  &kp PIPE                                 &smart_shift LESS_THAN GREATER_THAN  &smart_shift KP_MULTIPLY KP_DIVIDE               &smart_shift LS(EQUAL) EQUAL  &kp CARET        &trans  &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp KP_SLASH     &trans
-&trans  &trans                                   &trans                               &trans                                           &to 0                         &trans           &trans  &trans        &to 0         &trans        &trans  &trans
+&trans  &trans                                  &trans                              &trans                                          &trans                       &trans           &trans  &trans        &trans        &trans        &trans  &trans           &trans
+&trans  &kp EXCL                                &kp AT_SIGN                         &kp HASH                                        &kp DOLLAR                   &kp PERCENT      &trans  &kp KP_MINUS  &kp N7        &kp N8        &kp N9  &kp KP_MULTIPLY  &trans
+&trans  &auto_shift LEFT_BRACKET RIGHT_BRACKET  &auto_shift LEFT_BRACE RIGHT_BRACE  &auto_shift LEFT_PARENTHESIS RIGHT_PARENTHESIS  &auto_shift LS(MINUS) MINUS  &kp AMPERSAND    &trans  &kp KP_PLUS   &kp NUMBER_4  &kp N5        &kp N6  &kp NUMBER_0     &trans
+&trans  &kp PIPE                                &auto_shift LESS_THAN GREATER_THAN  &auto_shift KP_MULTIPLY KP_DIVIDE               &auto_shift LS(EQUAL) EQUAL  &kp CARET        &trans  &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp KP_SLASH     &trans
+&trans  &trans                                  &trans                              &trans                                          &to 0                        &trans           &trans  &trans        &to 0         &trans        &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
