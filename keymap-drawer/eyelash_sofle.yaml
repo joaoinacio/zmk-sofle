@@ -107,7 +107,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '|'
-  - {t: <, h: '>'}
+  - ':'
   - {t: KP MULTIPLY, h: KP DIVIDE}
   - {t: '=', h: Sft+=, s: +}
   - {t: '&', h: ^}
