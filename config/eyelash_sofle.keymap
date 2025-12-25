@@ -140,6 +140,13 @@
             label = "CAPS_COLEMAK";
         };
 
+        tap_tog4: tap_tog4 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&tog 4>;
+            label = "TAP_TOG4";
+        };
+
         capsw_colemak_o_return: capsw_colemak_return {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
