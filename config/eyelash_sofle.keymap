@@ -89,7 +89,7 @@
         compatible = "zmk,behavior-tap-dance";
         label = "TD_CAPSW_GRAVE";
         #binding-cells = <0>;
-        bindings = <&capsw_colemak>, <&kp GRAVE>;
+        bindings = <&capsw_tog 4>, <&kp GRAVE>;
     };
 
     td_mo1_to2: td_mo1_to2 {
@@ -132,35 +132,21 @@
     };
 
     macros {
-        capsw_colemak: caps_colemak {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&caps_word_colemak_o &tog 4>;
-
-            label = "CAPS_COLEMAK";
-        };
-
-        tap_tog4: tap_tog4 {
+        capsw_tog: capsw_tog {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&tog 4>;
-            label = "TAP_TOG4";
+            bindings =
+                <&macro_tap>,
+                <&caps_word_colemak_o &macro_param_1to1 &tog MACRO_PLACEHOLDER>;
+
+            label = "CAPSW_TOG";
         };
 
-        capsw_colemak_o_return: capsw_colemak_return {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LS(SEMI) &tog 4>;
-
-            label = "CAPSW_COLEMAK_RETURN";
-        };
-
-        capsw_space_ret: capsw_space_ret {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp SPACE &tog 4>;
-
-            label = "CAPSW_SPACE_RET";
+        tap_tog: tap_tog {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &tog MACRO_PLACEHOLDER>;
+            label = "TAP_TOG";
         };
     };
 
@@ -169,11 +155,11 @@
 
         layer0 {
             bindings = <
-&lt 3 ESCAPE     &kp F1              &kp F2              &kp F3                  &kp F4                &kp F5       &mmv MOVE_UP     &kp F6     &kp F7                 &kp F8           &kp F9               &kp F10                      &kp CAPSLOCK
-&kp TAB          &kp Q               &kp W               &kp E                   &kp R                 &kp T        &mmv MOVE_DOWN   &kp Y      &kp U                  &kp I            &kp O                &kp P                        &kp BSLH
-&kp BACKSPACE    &hrow_l LEFT_GUI A  &hrow_l LEFT_ALT S  &hrow_l LEFT_CONTROL D  &hrow_l LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT   &kp H      &hrow_r RIGHT_SHIFT J  &hrow_r RCTRL K  &hrow_r RIGHT_ALT L  &hrow_r RIGHT_GUI SEMICOLON  &kp APOS
-&td_capsw_grave  &kp Z               &kp X               &kp C                   &kp V                 &kp B        &mmv MOVE_RIGHT  &kp N      &kp M                  &kp COMMA        &kp DOT              &kp FSLH                     &mt RIGHT_SHIFT EQUAL
-&kp C_MUTE       &trans              &kp LEFT_ALT        &kp LEFT_GUI            &lt 1 BACKSPACE       &kp SPACE    &mkp LCLK        &kp ENTER  &lt 2 DELETE           &kp RIGHT_GUI    &kp RIGHT_ALT        &trans
+&lt 3 ESCAPE   &kp F1              &kp F2              &kp F3                  &kp F4                &kp F5       &mmv MOVE_UP     &kp F6     &kp F7                 &kp F8           &kp F9               &kp F10                      &kp CAPSLOCK
+&kp TAB        &kp Q               &kp W               &kp E                   &kp R                 &kp T        &mmv MOVE_DOWN   &kp Y      &kp U                  &kp I            &kp O                &kp P                        &kp BSLH
+&kp BACKSPACE  &hrow_l LEFT_GUI A  &hrow_l LEFT_ALT S  &hrow_l LEFT_CONTROL D  &hrow_l LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT   &kp H      &hrow_r RIGHT_SHIFT J  &hrow_r RCTRL K  &hrow_r RIGHT_ALT L  &hrow_r RIGHT_GUI SEMICOLON  &kp APOS
+&kp GRAVE      &kp Z               &kp X               &kp C                   &kp V                 &kp B        &mmv MOVE_RIGHT  &kp N      &kp M                  &kp COMMA        &kp DOT              &kp FSLH                     &mt RIGHT_SHIFT EQUAL
+&kp C_MUTE     &trans              &kp LEFT_ALT        &kp LEFT_GUI            &lt 1 BACKSPACE       &kp SPACE    &mkp LCLK        &kp ENTER  &lt 2 DELETE           &kp RIGHT_GUI    &kp RIGHT_ALT        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -195,11 +181,11 @@
 
         nav {
             bindings = <
-&trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans         &trans     &trans          &trans     &trans      &trans
-&trans  &trans        &kp LA(TAB)   &kp LC(TAB)       &trans          &trans    &trans  &kp PAGE_UP    &kp HOME   &kp UP_ARROW    &kp END    &kp INSERT  &kp PRINTSCREEN
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp PAGE_DOWN  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &kp TAB
-&trans  &trans        &trans        &kp LS(LC(TAB))   &trans          &trans    &trans  &trans         &kp LC(V)  &kp LC(C)       &kp LC(X)  &kp LC(Z)   &trans
-&trans  &trans        &trans        &trans            &to 0           &trans    &trans  &trans         &to 0      &trans          &trans     &trans
+&trans        &trans        &trans        &trans            &trans          &trans    &trans  &trans         &trans     &trans          &trans     &trans      &trans
+&trans        &trans        &kp LA(TAB)   &kp LC(TAB)       &trans          &trans    &trans  &kp PAGE_UP    &kp HOME   &kp UP_ARROW    &kp END    &kp INSERT  &kp PRINTSCREEN
+&trans        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp PAGE_DOWN  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &kp TAB
+&capsw_tog 4  &trans        &trans        &kp LS(LC(TAB))   &trans          &trans    &trans  &trans         &kp LC(V)  &kp LC(C)       &kp LC(X)  &kp LC(Z)   &trans
+&trans        &trans        &trans        &trans            &to 0           &trans    &trans  &trans         &to 0      &trans          &trans     &trans
             >;
 
             display-name = "nav";
@@ -220,11 +206,11 @@
 
         caps_colemak {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &kp LS(SEMICOLON)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans             &trans
-&trans  &trans  &trans  &trans  &to 0   &capsw_space_ret    &trans  &trans  &to 0   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans            &trans  &trans            &trans             &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans            &trans  &trans            &trans             &tap_tog P 4       &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans            &trans  &trans            &trans             &kp LS(SEMICOLON)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans            &trans  &tap_tog COMMA 4  &tap_tog PERIOD 4  &tap_tog FSLH 4    &trans
+&trans  &trans  &trans  &trans  &to 0   &tap_tog SPACE 4    &trans  &tap_tog ENTER 4  &to 0   &trans            &trans             &trans
             >;
         };
     };
