@@ -96,14 +96,14 @@
         compatible = "zmk,behavior-tap-dance";
         label = "TD_MO1_TO2";
         #binding-cells = <0>;
-        bindings = <&mo 1>, <&tog 2>;
+        bindings = <&mo 3>, <&tog 1>;
     };
 
     td_mo2_to1: td_mo2_to1 {
         compatible = "zmk,behavior-tap-dance";
         label = "TD_MO2_TO1";
         #binding-cells = <0>;
-        bindings = <&mo 2>, <&tog 1>;
+        bindings = <&mo 1>, <&tog 3>;
     };
 
     behaviors {
@@ -121,13 +121,13 @@
         tog1 {
             bindings = <&tog 1>;
             key-positions = <56 57>;
-            layers = <0 1>;
+            layers = <0 3>;
         };
 
         tog2 {
             bindings = <&tog 2>;
             key-positions = <59 60>;
-            layers = <0 2>;
+            layers = <0 1>;
         };
     };
 
@@ -173,6 +173,19 @@
             display-name = "LAYER0";
         };
 
+        lower {
+            bindings = <
+&trans  &trans          &trans            &trans             &trans                &trans                   &trans  &trans        &trans        &trans        &trans  &trans           &trans
+&trans  &kp EXCL        &kp AT_SIGN       &kp HASH           &kp DOLLAR            &kp PERCENT              &trans  &kp KP_MINUS  &kp N7        &kp N8        &kp N9  &kp KP_MULTIPLY  &trans
+&trans  &kp CARET       &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &kp KP_PLUS   &kp NUMBER_4  &kp N5        &kp N6  &kp NUMBER_0     &trans
+&trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans  &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp KP_SLASH     &trans
+&trans  &trans          &trans            &trans             &to 0                 &trans                   &trans  &trans        &to 0         &trans        &trans  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+            label = "lower";
+        };
+
         nav {
             bindings = <
 &trans        &trans        &trans        &trans            &trans          &trans    &trans  &trans         &trans     &trans          &trans     &trans      &trans
@@ -186,18 +199,6 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        num_sym {
-            bindings = <
-&trans  &trans          &trans            &trans             &trans                &trans                   &trans  &trans        &trans        &trans        &trans  &trans           &trans
-&trans  &kp EXCL        &kp AT_SIGN       &kp HASH           &kp DOLLAR            &kp PERCENT              &trans  &kp KP_MINUS  &kp N7        &kp N8        &kp N9  &kp KP_MULTIPLY  &trans
-&trans  &kp CARET       &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &kp KP_PLUS   &kp NUMBER_4  &kp N5        &kp N6  &kp NUMBER_0     &trans
-&trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans  &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp KP_SLASH     &trans
-&trans  &trans          &trans            &trans             &to 0                 &trans                   &trans  &trans        &to 0         &trans        &trans  &trans
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-
         sys {
             bindings = <
 &trans  &trans          &trans           &trans           &trans           &trans             &trans  &trans           &trans           &trans           &trans           &trans  &trans
@@ -206,6 +207,8 @@
 &trans  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF    &trans  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &trans  &trans
 &trans  &trans          &trans           &trans           &trans           &trans             &trans  &trans           &trans           &trans           &trans           &trans
             >;
+
+            label = "sys";
         };
 
         caps_colemak {
