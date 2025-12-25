@@ -176,9 +176,9 @@
         nav {
             bindings = <
 &trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans         &trans     &trans          &trans     &trans      &trans
-&trans  &trans        &kp LA(TAB)   &kp LC(TAB)       &trans          &trans    &trans  &kp PAGE_UP    &kp HOME   &kp UP_ARROW    &kp END    &kp INSERT  &kp PRINTSCREEN
+&trans  &trans        &trans        &trans            &trans          &trans    &trans  &kp PAGE_UP    &kp HOME   &kp UP_ARROW    &kp END    &kp INSERT  &trans
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp PAGE_DOWN  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &kp TAB
-&trans  &trans        &trans        &kp LS(LC(TAB))   &trans          &trans    &trans  &trans         &kp LC(V)  &kp LC(C)       &kp LC(X)  &kp LC(Z)   &trans
+&trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans         &kp LC(V)  &kp LC(C)       &kp LC(X)  &kp LC(Z)   &kp PRINTSCREEN
 &trans  &trans        &trans        &trans            &to 0           &trans    &trans  &trans         &to 0      &trans          &trans     &trans
             >;
 
