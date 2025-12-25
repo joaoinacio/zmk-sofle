@@ -96,8 +96,8 @@ layers:
   - {t: '[', h: ']', s: '{'}
   - {t: '{', h: '}'}
   - {t: (, h: )}
-  - {t: Sft+-, h: '-', s: Sft+_}
-  - '&'
+  - {t: '-', h: _, s: _}
+  - {t: '>', h: <}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP PLUS
   - '4'
@@ -109,8 +109,8 @@ layers:
   - '|'
   - {t: <, h: '>'}
   - {t: KP MULTIPLY, h: KP DIVIDE}
-  - {t: Sft+=, h: '=', s: Sft++}
-  - ^
+  - {t: '=', h: Sft+=, s: +}
+  - {t: '&', h: ^}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', s: +}
   - '1'
