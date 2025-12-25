@@ -2,17 +2,17 @@ layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
   - {t: '$$mdi:keyboard-esc$$', h: sys}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
   - {t: '-', s: _}
   - $$mdi:keyboard-tab$$
   - Q
@@ -54,7 +54,7 @@ layers:
   - {t: /, s: '?'}
   - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
   - $$mdi:volume-off$$
-  - {t: '[', s: '{'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:backspace$$', h: nav}
@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: num_sym}
   - RIGHT GUI
   - $$mdi:apple-keyboard-option$$
-  - {t: ']', s: '}'}
+  - {t: '$$mdi:transfer$$', type: trans}
   nav:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -80,10 +80,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F12
-  - F7
-  - F8
-  - F9
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+$$mdi:keyboard-tab$$
+  - Ctl+$$mdi:keyboard-tab$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PgUp
@@ -93,10 +93,10 @@ layers:
   - Ins
   - PRINTSCREEN
   - $$mdi:apple-keyboard-caps$$
-  - F11
-  - F4
-  - F5
-  - F6
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
@@ -106,10 +106,10 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F10
-  - F1
-  - F2
-  - F3
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+Ctl+$$mdi:keyboard-tab$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-tab$$
@@ -145,11 +145,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP MULTIPLY
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - KP SUBTRACT
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
   - {t: '$$mdi:transfer$$', type: trans}
   - KP MINUS
   - {t: '7', s: '&'}
@@ -158,24 +158,24 @@ layers:
   - KP MULTIPLY
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '0', s: )}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', h: '$$mdi:apple-keyboard-shift$$'}
-  - KP PLUS
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
   - {t: '$$mdi:transfer$$', type: trans}
   - KP PLUS
-  - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
+  - '4'
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - '0'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP DIVIDE
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - KP EQUAL
+  - _
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - '{'
+  - '}'
   - {t: '$$mdi:transfer$$', type: trans}
   - KP EQUAL
   - '1'
