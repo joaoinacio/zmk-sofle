@@ -93,10 +93,10 @@ layers:
   - KP MULTIPLY
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '[', s: '{'}
-  - '{'
-  - (
-  - {t: '-', s: _}
+  - {t: ']', h: '[', s: '}'}
+  - {t: '}', h: '{'}
+  - {t: ), h: (}
+  - {t: '-', h: Sft+-, s: _}
   - '&'
   - {t: '$$mdi:transfer$$', type: trans}
   - KP PLUS
@@ -106,10 +106,10 @@ layers:
   - '0'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ']', s: '}'}
-  - '}'
-  - )
-  - {t: '=', s: +}
+  - '|'
+  - {t: '>', h: <}
+  - {t: KP DIVIDE, h: KP MULTIPLY}
+  - {t: '=', h: Sft+=, s: +}
   - ^
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', s: +}
