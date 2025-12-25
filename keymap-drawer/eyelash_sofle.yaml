@@ -331,7 +331,7 @@ combos:
   l: [LAYER0]
 - p: [56, 57]
   k: {t: lower, h: toggle}
-  l: [LAYER0, sys]
+  l: [LAYER0]
 - p: [59, 60]
   k: {t: nav, h: toggle}
-  l: [LAYER0, lower]
+  l: [LAYER0]
