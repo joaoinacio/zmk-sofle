@@ -133,7 +133,7 @@
                 <&macro_tap>,
                 <&caps_word_colemak_o &macro_param_1to1 &tog MACRO_PLACEHOLDER>;
 
-            label = "CAPSW_TOG";
+            label = "Caps Word &Toggle Layer";
         };
 
         tap_tog: tap_tog {
@@ -152,8 +152,8 @@
 &lt 3 ESCAPE   &kp F1              &kp F2              &kp F3                  &kp F4                &kp F5       &mmv MOVE_UP     &kp F6     &kp F7                 &kp F8           &kp F9               &kp F10                      &kp CAPSLOCK
 &kp TAB        &kp Q               &kp W               &kp E                   &kp R                 &kp T        &mmv MOVE_DOWN   &kp Y      &kp U                  &kp I            &kp O                &kp P                        &kp BSLH
 &kp BACKSPACE  &hrow_l LEFT_GUI A  &hrow_l LEFT_ALT S  &hrow_l LEFT_CONTROL D  &hrow_l LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT   &kp H      &hrow_r RIGHT_SHIFT J  &hrow_r RCTRL K  &hrow_r RIGHT_ALT L  &hrow_r RIGHT_GUI SEMICOLON  &kp APOS
-&kp GRAVE      &kp Z               &kp X               &kp C                   &kp V                 &kp B        &mmv MOVE_RIGHT  &kp N      &kp M                  &kp COMMA        &kp DOT              &kp FSLH                     &mt RIGHT_SHIFT EQUAL
-&kp C_MUTE     &trans              &kp LEFT_ALT        &kp LEFT_GUI            &lt 1 BACKSPACE       &kp SPACE    &mkp LCLK        &kp ENTER  &lt 2 DELETE           &kp RIGHT_GUI    &kp RIGHT_ALT        &trans
+&kp GRAVE      &kp Z               &kp X               &kp C                   &kp V                 &kp B        &mmv MOVE_RIGHT  &kp N      &kp M                  &kp COMMA        &kp DOT              &kp FSLH                     &capsw_tog 4
+&kp C_MUTE     &none               &kp LEFT_ALT        &kp LEFT_GUI            &lt 1 BACKSPACE       &kp SPACE    &mkp LCLK        &kp ENTER  &lt 2 DELETE           &kp RIGHT_GUI    &kp RIGHT_ALT        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -165,7 +165,7 @@
 &trans  &trans          &trans            &trans             &trans                &trans                   &trans  &trans        &trans        &trans        &trans  &trans           &trans
 &trans  &kp EXCL        &kp AT_SIGN       &kp HASH           &kp DOLLAR            &kp PERCENT              &trans  &kp KP_MINUS  &kp N7        &kp N8        &kp N9  &kp KP_MULTIPLY  &trans
 &trans  &kp CARET       &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &kp KP_PLUS   &kp NUMBER_4  &kp N5        &kp N6  &kp NUMBER_0     &trans
-&trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans  &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp KP_SLASH     &trans
+&trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans  &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp KP_SLASH     &trans
 &trans  &trans          &trans            &trans             &to 0                 &trans                   &trans  &trans        &to 0         &trans        &trans  &trans
             >;
 
@@ -175,11 +175,11 @@
 
         nav {
             bindings = <
-&trans        &trans        &trans        &trans            &trans          &trans    &trans  &trans         &trans     &trans          &trans     &trans      &trans
-&trans        &trans        &kp LA(TAB)   &kp LC(TAB)       &trans          &trans    &trans  &kp PAGE_UP    &kp HOME   &kp UP_ARROW    &kp END    &kp INSERT  &kp PRINTSCREEN
-&trans        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp PAGE_DOWN  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &kp TAB
-&capsw_tog 4  &trans        &trans        &kp LS(LC(TAB))   &trans          &trans    &trans  &trans         &kp LC(V)  &kp LC(C)       &kp LC(X)  &kp LC(Z)   &trans
-&trans        &trans        &trans        &trans            &to 0           &trans    &trans  &trans         &to 0      &trans          &trans     &trans
+&trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans         &trans     &trans          &trans     &trans      &trans
+&trans  &trans        &kp LA(TAB)   &kp LC(TAB)       &trans          &trans    &trans  &kp PAGE_UP    &kp HOME   &kp UP_ARROW    &kp END    &kp INSERT  &kp PRINTSCREEN
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp PAGE_DOWN  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &kp TAB
+&trans  &trans        &trans        &kp LS(LC(TAB))   &trans          &trans    &trans  &trans         &kp LC(V)  &kp LC(C)       &kp LC(X)  &kp LC(Z)   &trans
+&trans  &trans        &trans        &trans            &to 0           &trans    &trans  &trans         &to 0      &trans          &trans     &trans
             >;
 
             display-name = "nav";
