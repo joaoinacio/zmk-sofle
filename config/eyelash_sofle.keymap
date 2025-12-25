@@ -165,7 +165,7 @@
 &trans  &trans             &trans           &trans                 &trans      &trans           &trans  &trans        &trans        &trans        &trans  &trans           &trans
 &trans  &kp EXCL           &kp AT_SIGN      &kp HASH               &kp DOLLAR  &kp PERCENT      &trans  &kp KP_MINUS  &kp N7        &kp N8        &kp N9  &kp KP_MULTIPLY  &trans
 &trans  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp MINUS   &kp AMPERSAND    &trans  &kp KP_PLUS   &kp NUMBER_4  &kp N5        &kp N6  &kp NUMBER_0     &trans
-&trans  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp UNDER   &kp CARET        &trans  &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp KP_SLASH     &trans
+&trans  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp EQUAL   &kp CARET        &trans  &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp KP_SLASH     &trans
 &trans  &trans             &trans           &trans                 &to 0       &trans           &trans  &trans        &to 0         &trans        &trans  &trans
             >;
 
@@ -186,7 +186,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        sys {
+        adjust {
             bindings = <
 &trans  &trans          &trans           &trans           &trans           &trans             &trans  &trans           &trans           &trans           &trans           &trans  &trans
 &trans  &out OUT_USB    &out OUT_BLE     &trans           &bootloader      &sys_reset         &trans  &sys_reset       &bootloader      &trans           &trans           &trans  &trans
@@ -195,7 +195,7 @@
 &trans  &trans          &trans           &trans           &trans           &trans             &trans  &trans           &trans           &trans           &trans           &trans
             >;
 
-            label = "sys";
+            label = "adjust";
         };
 
         caps_colemak {
@@ -204,7 +204,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans            &trans  &trans            &trans             &tap_tog P 4       &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans            &trans  &trans            &trans             &kp LS(SEMICOLON)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans            &trans  &tap_tog COMMA 4  &tap_tog PERIOD 4  &tap_tog FSLH 4    &trans
-&trans  &trans  &trans  &trans  &to 0   &tap_tog SPACE 4    &trans  &tap_tog ENTER 4  &to 0   &trans            &trans             &trans
+&trans  &trans  &trans  &trans  &tog 4  &tap_tog SPACE 4    &trans  &tap_tog ENTER 4  &tog 4  &trans            &trans             &trans
             >;
         };
     };
