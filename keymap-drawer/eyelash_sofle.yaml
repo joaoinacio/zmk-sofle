@@ -96,8 +96,8 @@ layers:
   - {t: '[', h: ']', s: '{'}
   - {t: '{', h: '}'}
   - {t: (, h: )}
-  - {t: '-', h: _, s: _}
   - {t: '>', h: <}
+  - {t: '-', h: _, s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP PLUS
   - '4'
