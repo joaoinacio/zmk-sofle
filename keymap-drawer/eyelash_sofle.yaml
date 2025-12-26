@@ -317,11 +317,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&tap_tog SPACE 4'
   - '&tap_tog TAB 4'
+  - '&tap_tog SPACE 4'
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&tap_tog RETURN 4'
   - '&tap_tog DELETE 4'
-  - '&tap_tog ENTER 4'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
