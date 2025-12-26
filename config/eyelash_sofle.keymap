@@ -41,6 +41,8 @@
     tapping-term-ms = <220>;
 };
 
+&sl { release-after-ms = <3000>; };
+
 / {
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
@@ -94,6 +96,17 @@
         flavor = "tap-preferred";
     };
 
+    ht_sl: ht_sl {
+        compatible = "zmk,behavior-hold-tap";
+        label = "Hold tap sticky layer";
+        bindings = <&sl>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <250>;
+        flavor = "tap-preferred";
+        require-prior-idle-ms = <100>;
+    };
+
     behaviors {
     };
 
@@ -143,11 +156,11 @@
 
         layer0 {
             bindings = <
-&kp F1         &kp F2                     &kp F3                     &kp F4                         &kp F5                  &kp F6       &mmv MOVE_UP     &kp F7     &kp F8                   &kp F9                  &kp F10                     &kp F11                             &kp F12
-&kp ESCAPE     &kp Q                      &kp W                      &kp E                          &kp R                   &kp T        &mmv MOVE_DOWN   &kp Y      &kp U                    &kp I                   &kp O                       &kp P                               &capsw_tog 4
-&kp BACKSPACE  &hrow_mod_slow LEFT_GUI A  &hrow_mod_slow LEFT_ALT S  &hrow_mod_slow LEFT_CONTROL D  &hrow_mod LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT   &lt 1 H    &hrow_mod RIGHT_SHIFT J  &hrow_mod_slow RCTRL K  &hrow_mod_slow RIGHT_ALT L  &hrow_mod_slow RIGHT_GUI SEMICOLON  &lt 2 APOSTROPHE
-&lt 3 GRAVE    &kp Z                      &kp X                      &kp C                          &kp V                   &kp B        &mmv MOVE_RIGHT  &kp N      &kp M                    &kp COMMA               &kp DOT                     &kp FSLH                            &kp BACKSLASH
-&kp C_MUTE     &none                      &none                      &kp LEFT_GUI                   &lt 1 TAB               &kp SPACE    &mkp LCLK        &kp ENTER  &lt 2 DELETE             &kp RIGHT_ALT           &none                       &none
+&kp F1         &kp F2                     &kp F3                     &kp F4                         &kp F5                  &kp F6       &mmv MOVE_UP     &kp F7      &kp F8                   &kp F9                  &kp F10                     &kp F11                             &kp F12
+&kp ESCAPE     &kp Q                      &kp W                      &kp E                          &kp R                   &kp T        &mmv MOVE_DOWN   &kp Y       &kp U                    &kp I                   &kp O                       &kp P                               &capsw_tog 4
+&kp BACKSPACE  &hrow_mod_slow LEFT_GUI A  &hrow_mod_slow LEFT_ALT S  &hrow_mod_slow LEFT_CONTROL D  &hrow_mod LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT   &ht_sl 1 H  &hrow_mod RIGHT_SHIFT J  &hrow_mod_slow RCTRL K  &hrow_mod_slow RIGHT_ALT L  &hrow_mod_slow RIGHT_GUI SEMICOLON  &lt 2 APOSTROPHE
+&lt 3 GRAVE    &kp Z                      &kp X                      &kp C                          &kp V                   &kp B        &mmv MOVE_RIGHT  &kp N       &kp M                    &kp COMMA               &kp DOT                     &kp FSLH                            &kp BACKSLASH
+&kp C_MUTE     &none                      &none                      &kp LEFT_GUI                   &lt 1 TAB               &kp SPACE    &mkp LCLK        &kp ENTER   &lt 2 DELETE             &kp RIGHT_ALT           &none                       &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -156,11 +169,11 @@
 
         lower {
             bindings = <
-&trans  &trans                                  &trans                              &trans                                          &trans                              &trans         &trans  &trans  &trans                          &trans        &trans  &trans         &trans
-&trans  &kp EXCL                                &kp AT_SIGN                         &kp HASH                                        &kp DOLLAR                          &kp PERCENT    &trans  &none   &kp N7                          &kp N8        &kp N9  &kp KP_DIVIDE  &kp KP_MULTIPLY
-&trans  &auto_shift RIGHT_BRACKET LEFT_BRACKET  &auto_shift RIGHT_BRACE LEFT_BRACE  &auto_shift RIGHT_PARENTHESIS LEFT_PARENTHESIS  &auto_shift UNDER MINUS             &kp EQUAL      &trans  &none   &hrow_mod RIGHT_SHIFT NUMBER_4  &kp N5        &kp N6  &kp KP_MINUS   &kp KP_PLUS
-&trans  &kp CARET                               &kp AMPERSAND                       &kp CARET                                       &auto_shift LESS_THAN GREATER_THAN  &kp ASTRK      &trans  &none   &kp NUMBER_1                    &kp NUMBER_2  &kp N3  &kp KP_DOT     &kp KP_ENTER
-&trans  &trans                                  &trans                              &trans                                          &trans                              &trans         &trans  &trans  &trans                          &kp N0        &trans  &trans
+&trans  &trans                                  &trans                              &trans                                          &trans                              &trans         &trans  &trans        &trans                          &trans        &trans  &trans         &trans
+&trans  &kp EXCL                                &kp AT_SIGN                         &kp HASH                                        &kp DOLLAR                          &kp PERCENT    &trans  &none         &kp N7                          &kp N8        &kp N9  &kp KP_DIVIDE  &kp KP_MULTIPLY
+&trans  &auto_shift RIGHT_BRACKET LEFT_BRACKET  &auto_shift RIGHT_BRACE LEFT_BRACE  &auto_shift RIGHT_PARENTHESIS LEFT_PARENTHESIS  &auto_shift UNDER MINUS             &kp EQUAL      &trans  &none         &hrow_mod RIGHT_SHIFT NUMBER_4  &kp N5        &kp N6  &kp KP_MINUS   &kp KP_PLUS
+&trans  &kp CARET                               &kp AMPERSAND                       &kp CARET                                       &auto_shift LESS_THAN GREATER_THAN  &kp ASTRK      &trans  &kp NUMBER_0  &kp NUMBER_1                    &kp NUMBER_2  &kp N3  &kp KP_DOT     &kp KP_ENTER
+&trans  &trans                                  &trans                              &trans                                          &trans                              &trans         &trans  &trans        &trans                          &kp N0        &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
