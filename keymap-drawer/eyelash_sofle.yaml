@@ -96,8 +96,8 @@ layers:
   - {t: '[', h: ']', s: '{'}
   - {t: '{', h: '}'}
   - {t: (, h: )}
-  - {t: '>', h: <}
-  - {t: '-', h: _, s: _}
+  - {t: KP MINUS, h: _}
+  - {t: '=', h: Sft+=, s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP PLUS
   - '4'
@@ -108,8 +108,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: KP MULTIPLY, h: KP DIVIDE}
-  - {t: '=', h: Sft+=, s: +}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+*
   - {t: '&', h: ^}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', s: +}
