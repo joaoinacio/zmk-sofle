@@ -27,12 +27,12 @@ layers:
   - O
   - P
   - '&capsw_tog 4'
-  - {t: '$$mdi:backspace$$', h: lower}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: G, h: lower}
+  - G
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: H, h: lower}
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
@@ -57,7 +57,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-tab$$', h: nav}
+  - {t: '$$mdi:keyboard-tab$$', h: lower}
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -92,15 +92,15 @@ layers:
   - {t: '9', s: (}
   - KP MULTIPLY
   - KP DOT
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', h: ']', s: '{'}
   - {t: '{', h: '}'}
   - {t: (, h: )}
-  - {t: '-', h: _, s: _}
-  - {t: '=', h: +, s: +, type: held alternate}
+  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
+  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: KP PLUS, type: held alternate}
-  - '4'
+  - {t: KP PLUS, type: held}
+  - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - '0'
@@ -109,7 +109,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '>', h: '*'}
+  - {t: '>', h: <}
   - {t: '&', h: ^}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', s: +}
@@ -122,7 +122,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -187,7 +187,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
