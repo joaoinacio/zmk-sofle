@@ -112,7 +112,7 @@ layers:
   - {t: '>', h: <}
   - '*'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '0'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '1'
   - '2'
   - {t: '3', s: '#'}
