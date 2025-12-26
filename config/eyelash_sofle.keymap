@@ -194,11 +194,11 @@
 
         caps_colemak {
             bindings = <
-&trans  &trans  &trans  &trans  &trans            &trans            &trans  &trans             &trans            &trans            &trans             &trans             &trans
-&trans  &trans  &trans  &trans  &trans            &trans            &trans  &trans             &trans            &trans            &trans             &tap_tog P 4       &trans
-&trans  &trans  &trans  &trans  &trans            &trans            &trans  &trans             &trans            &trans            &trans             &kp LS(SEMICOLON)  &trans
-&trans  &trans  &trans  &trans  &trans            &trans            &trans  &trans             &trans            &tap_tog COMMA 4  &tap_tog PERIOD 4  &tap_tog FSLH 4    &tap_tog BACKSLASH 4
-&trans  &trans  &trans  &trans  &tap_tog SPACE 4  &tap_tog TAB 4    &trans  &tap_tog DELETE 4  &tap_tog ENTER 4  &trans            &trans             &trans
+&trans  &trans  &trans  &trans  &trans          &trans              &trans  &trans             &trans             &trans            &trans             &trans             &trans
+&trans  &trans  &trans  &trans  &trans          &trans              &trans  &trans             &trans             &trans            &trans             &tap_tog P 4       &trans
+&trans  &trans  &trans  &trans  &trans          &trans              &trans  &trans             &trans             &trans            &trans             &kp LS(SEMICOLON)  &trans
+&trans  &trans  &trans  &trans  &trans          &trans              &trans  &trans             &trans             &tap_tog COMMA 4  &tap_tog PERIOD 4  &tap_tog FSLH 4    &tap_tog BACKSLASH 4
+&trans  &trans  &trans  &trans  &tap_tog TAB 4  &tap_tog SPACE 4    &trans  &tap_tog RETURN 4  &tap_tog DELETE 4  &trans            &trans             &trans
             >;
         };
     };
