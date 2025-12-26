@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - '&capsw_tog 4'
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:backspace$$', h: lower}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
@@ -39,7 +39,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: RIGHT GUI, s: ':'}
-  - {t: '''', s: '"'}
+  - {t: '''', h: nav, s: '"'}
   - {t: '`', h: sys, s: '~'}
   - Z
   - X
@@ -57,26 +57,26 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:backspace$$', h: lower}
   - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-tab$$', h: nav}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace-reverse-outline$$', h: nav}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   lower:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F2
-  - F3
-  - F4
-  - F5
   - {t: '$$mdi:transfer$$', type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -92,12 +92,12 @@ layers:
   - {t: '9', s: (}
   - KP MULTIPLY
   - KP DOT
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '[', h: ']', s: '{'}
   - {t: '{', h: '}'}
   - {t: (, h: )}
   - {t: '-', h: _, s: _}
-  - {t: '=', h: +, s: +, type: held}
+  - {t: '=', h: +, s: +, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: KP PLUS, type: held alternate}
   - '4'
@@ -122,11 +122,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -169,7 +169,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -187,11 +187,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -312,16 +312,16 @@ layers:
   - '&tap_tog COMMA 4'
   - '&tap_tog PERIOD 4'
   - '&tap_tog FSLH 4'
+  - '&tap_tog BACKSLASH 4'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: caps_colemak, h: toggle}
   - '&tap_tog SPACE 4'
+  - '&tap_tog TAB 4'
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&tap_tog DELETE 4'
   - '&tap_tog ENTER 4'
-  - {t: caps_colemak, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
