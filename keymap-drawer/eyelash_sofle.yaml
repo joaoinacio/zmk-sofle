@@ -97,7 +97,7 @@ layers:
   - {t: '{', h: '}'}
   - {t: (, h: )}
   - {t: '-', h: _, s: _}
-  - {t: '=', s: +}
+  - {t: '=', h: +, s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
@@ -108,9 +108,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - ^
   - '&'
-  - ^
-  - {t: '>', h: <}
   - '*'
+  - {t: '>', h: <}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '1'
@@ -156,7 +156,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - END
   - Ins
-  - PRINTSCREEN
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
@@ -182,7 +182,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
