@@ -157,11 +157,11 @@
 
         lower {
             bindings = <
-&trans  &trans           &trans       &trans    &trans                              &trans         &trans  &trans     &trans                         &trans        &trans                &trans                 &trans
-&trans  &trans           &trans       &trans    &trans                              &trans         &trans  &trans     &kp MINUS                      &kp EQUAL     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&trans  &kp N1           &kp N2       &kp N3    &hrow_mod_slow LEFT_SHIFT NUMBER_4  &kp N5         &trans  &kp N6     &hrow_mod_slow RIGHT_SHIFT N7  &kp N8        &kp N9                &kp N0                 &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR                          &kp PERCENT    &trans  &kp CARET  &kp AMPERSAND                  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans           &trans       &trans    &trans                              &trans         &trans  &trans     &trans                         &trans        &trans                &trans
+&trans  &trans    &trans       &trans    &trans                            &trans         &trans  &trans     &trans                           &trans     &trans                &trans                 &trans
+&trans  &trans    &trans       &trans    &trans                            &trans         &trans  &kp DOT    &kp MINUS                        &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&trans  &kp EXCL  &kp AT_SIGN  &kp HASH  &hrow_mod_slow LEFT_SHIFT DOLLAR  &kp PERCENT    &trans  &kp CARET  &hrow_mod_slow RIGHT_SHIFT AMPS  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp N1    &kp N2       &kp N3    &kp N4                            &kp N5         &trans  &kp N6     &kp N7                           &kp N8     &kp N9                &kp N0                 &trans
+&trans  &trans    &trans       &trans    &trans                            &trans         &trans  &trans     &trans                           &trans     &trans                &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
