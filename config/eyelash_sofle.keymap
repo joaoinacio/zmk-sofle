@@ -118,18 +118,6 @@
             key-positions = <0 39>;
             layers = <0>;
         };
-
-        tog1 {
-            bindings = <&tog 1>;
-            key-positions = <56 57>;
-            layers = <0>;
-        };
-
-        tog2 {
-            bindings = <&tog 2>;
-            key-positions = <59 60>;
-            layers = <0>;
-        };
     };
 
     macros {
@@ -156,7 +144,7 @@
 
         layer0 {
             bindings = <
-&kp F1         &kp F2                     &kp F3                     &kp F4                         &kp F5                  &kp F6       &mmv MOVE_UP     &kp F7      &kp F8                   &kp F9                  &kp F10                     &kp F11                             &kp F12
+&none          &kp F2                     &kp F3                     &kp F4                         &kp F5                  &kp F6       &mmv MOVE_UP     &kp F7      &kp F8                   &kp F9                  &kp F10                     &kp F11                             &kp F12
 &kp ESCAPE     &kp Q                      &kp W                      &kp E                          &kp R                   &kp T        &mmv MOVE_DOWN   &kp Y       &kp U                    &kp I                   &kp O                       &kp P                               &capsw_tog 4
 &kp BACKSPACE  &hrow_mod_slow LEFT_GUI A  &hrow_mod_slow LEFT_ALT S  &hrow_mod_slow LEFT_CONTROL D  &hrow_mod LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT   &ht_sl 1 H  &hrow_mod RIGHT_SHIFT J  &hrow_mod_slow RCTRL K  &hrow_mod_slow RIGHT_ALT L  &hrow_mod_slow RIGHT_GUI SEMICOLON  &lt 2 APOSTROPHE
 &lt 3 GRAVE    &kp Z                      &kp X                      &kp C                          &kp V                   &kp B        &mmv MOVE_RIGHT  &kp N       &kp M                    &kp COMMA               &kp DOT                     &kp FSLH                            &kp BACKSLASH
@@ -182,10 +170,10 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans         &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans         &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &trans  &kp PRINTSCREEN
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans         &trans        &trans     &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &trans  &kp F7          &kp F8         &kp F9        &kp F10    &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &trans   &kp PRINTSCREEN
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans         &trans        &trans     &trans
             >;
 
