@@ -32,14 +32,14 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - G
+  - {t: G, h: lower}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: H, h: lower}
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: RIGHT GUI, s: ':'}
-  - {t: '''', h: nav, s: '"'}
+  - {t: '''', s: '"'}
   - {t: '`', h: sys, s: '~'}
   - Z
   - X
@@ -97,9 +97,9 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '5', s: '%'}
+  - {t: '5', s: '%', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '6', s: ^, type: held}
+  - {t: '6', s: ^, type: held alternate}
   - {t: '7', h: '$$mdi:apple-keyboard-shift$$', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
@@ -169,7 +169,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -191,7 +191,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
