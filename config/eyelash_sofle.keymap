@@ -170,7 +170,7 @@
 
         layer0 {
             bindings = <
-&none          &kp F2                 &kp F3                 &kp F4                     &kp F5                  &kp F6       &mmv MOVE_UP     &kp F7     &kp F8                     &kp F9               &kp F10                  &kp F11                          &kp F12
+&none          &none                  &none                  &none                      &none                   &none        &mmv MOVE_UP     &none      &none                      &none                &none                    &none                            &none
 &kp ESCAPE     &kp Q                  &kp W                  &kp E                      &kp R                   &kp T        &mmv MOVE_DOWN   &kp Y      &kp U                      &kp I                &kp O                    &kp P                            &capsw_tog 4
 &kp BACKSPACE  &hrow_left LEFT_GUI A  &hrow_left LEFT_ALT S  &hrow_left LEFT_CONTROL D  &hrow_mod LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT   &kp H      &hrow_right RIGHT_SHIFT J  &hrow_right RCTRL K  &hrow_right RIGHT_ALT L  &hrow_right RIGHT_GUI SEMICOLON  &kp APOS
 &lt 3 GRAVE    &kp Z                  &kp X                  &kp C                      &kp V                   &kp B        &mmv MOVE_RIGHT  &kp N      &kp M                      &kp COMMA            &kp DOT                  &kp FSLH                         &kp BACKSLASH
