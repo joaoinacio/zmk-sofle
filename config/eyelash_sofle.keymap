@@ -148,11 +148,11 @@
 
         layer0 {
             bindings = <
-&none          &none  &none                  &none                      &none                    &none        &mmv MOVE_UP     &none      &none                      &none                &none                    &none     &none
-&kp ESCAPE     &kp Q  &kp W                  &kp E                      &kp R                    &kp T        &mmv MOVE_DOWN   &kp Y      &kp U                      &kp I                &kp O                    &kp P     &capsw_tog 4
-&kp BACKSPACE  &kp A  &hrow_left LEFT_GUI S  &hrow_left LEFT_CONTROL D  &hrow_left LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT   &kp H      &hrow_right RIGHT_SHIFT J  &hrow_right RCTRL K  &hrow_right RIGHT_GUI L  &kp SEMI  &kp APOS
-&lt 3 GRAVE    &kp Z  &kp X                  &kp C                      &kp V                    &kp B        &mmv MOVE_RIGHT  &kp N      &kp M                      &kp COMMA            &kp DOT                  &kp FSLH  &kp BACKSLASH
-&kp C_MUTE     &none  &none                  &kp LEFT_GUI               &lt 1 TAB                &kp SPACE    &mkp LCLK        &kp ENTER  &lt 2 DELETE               &kp RIGHT_ALT        &none                    &none
+&none          &none  &none                  &none                      &none                    &none        &mmv MOVE_UP     &none         &none                      &none                &none                    &none                       &none
+&kp ESCAPE     &kp Q  &kp W                  &kp E                      &kp R                    &kp T        &mmv MOVE_DOWN   &kp Y         &kp U                      &kp I                &kp O                    &kp P                       &capsw_tog 4
+&kp BACKSPACE  &kp A  &hrow_left LEFT_GUI S  &hrow_left LEFT_CONTROL D  &hrow_left LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT   &kp H         &hrow_right RIGHT_SHIFT J  &hrow_right RCTRL K  &hrow_right RIGHT_ALT L  &hrow_right RIGHT_GUI SEMI  &kp APOS
+&lt 3 GRAVE    &kp Z  &kp X                  &kp C                      &kp V                    &kp B        &mmv MOVE_RIGHT  &kp N         &kp M                      &kp COMMA            &kp DOT                  &kp FSLH                    &kp BACKSLASH
+&kp C_MUTE     &none  &none                  &kp LEFT_GUI               &kp SPACE                &lt 2 TAB    &mkp LCLK        &lt 1 DELETE  &kp RET                    &sk RIGHT_SHIFT      &none                    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -161,11 +161,11 @@
 
         lower {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans    &trans  &trans   &trans                            &trans     &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans                          &trans    &trans  &kp DOT  &kp MINUS                         &kp EQUAL  &trans    &trans    &trans
-&trans  &kp N1  &kp N2  &kp N3  &hrow_left LEFT_SHIFT NUMBER_4  &kp N5    &trans  &kp N6   &hrow_right RIGHT_SHIFT NUMBER_7  &kp N8     &kp N9    &kp N0    &trans
-&trans  &trans  &trans  &trans  &trans                          &trans    &trans  &trans   &trans                            &trans     &kp LBKT  &kp RBKT  &trans
-&trans  &trans  &trans  &trans  &trans                          &trans    &trans  &trans   &trans                            &trans     &trans    &trans
+&trans  &trans  &trans  &trans                            &trans                          &trans    &trans  &trans   &trans                            &trans                        &trans    &trans    &trans
+&trans  &trans  &trans  &trans                            &trans                          &trans    &trans  &kp DOT  &kp MINUS                         &kp EQUAL                     &trans    &trans    &trans
+&trans  &kp N1  &kp N2  &hrow_left LEFT_CONTROL NUMBER_3  &hrow_left LEFT_SHIFT NUMBER_4  &kp N5    &trans  &kp N6   &hrow_right RIGHT_SHIFT NUMBER_7  &hrow_right RIGHT_CONTROL N8  &kp N9    &kp N0    &trans
+&trans  &trans  &trans  &trans                            &trans                          &trans    &trans  &trans   &trans                            &trans                        &kp LBKT  &kp RBKT  &trans
+&trans  &trans  &trans  &trans                            &trans                          &trans    &trans  &trans   &trans                            &trans                        &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
