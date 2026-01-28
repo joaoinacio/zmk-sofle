@@ -28,8 +28,8 @@ layers:
   - P
   - '&capsw_tog 4'
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - A
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
@@ -37,8 +37,8 @@ layers:
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: RIGHT GUI, s: ':'}
+  - {t: L, h: RIGHT GUI}
+  - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - {t: '`', h: sys, s: '~'}
   - Z
