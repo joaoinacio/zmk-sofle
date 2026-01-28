@@ -161,11 +161,11 @@
 
         lower {
             bindings = <
-&trans  &trans                        &trans                        &trans                            &trans                          &trans    &trans  &trans   &trans                            &trans                        &trans                    &trans                          &trans
-&trans  &trans                        &trans                        &trans                            &trans                          &trans    &trans  &kp DOT  &kp MINUS                         &kp EQUAL                     &trans                    &trans                          &trans
-&trans  &hrow_left LEFT_GUI NUMBER_1  &hrow_left LEFT_ALT NUMBER_2  &hrow_left LEFT_CONTROL NUMBER_3  &hrow_left LEFT_SHIFT NUMBER_4  &kp N5    &trans  &kp N6   &hrow_right RIGHT_SHIFT NUMBER_7  &hrow_right RIGHT_CONTROL N8  &hrow_right RIGHT_ALT N9  &hrow_right RIGHT_GUI NUMBER_0  &trans
-&trans  &trans                        &trans                        &trans                            &trans                          &trans    &trans  &trans   &trans                            &trans                        &kp LBKT                  &kp RBKT                        &trans
-&trans  &trans                        &trans                        &trans                            &trans                          &trans    &trans  &trans   &trans                            &trans                        &trans                    &trans
+&trans  &trans                        &trans                        &trans                            &trans                          &trans    &trans  &trans            &trans                            &trans                        &trans                    &trans                          &trans
+&trans  &trans                        &trans                        &trans                            &trans                          &trans    &trans  &kp GREATER_THAN  &kp MINUS                         &kp EQUAL                     &kp LBKT                  &kp RBKT                        &trans
+&trans  &hrow_left LEFT_GUI NUMBER_1  &hrow_left LEFT_ALT NUMBER_2  &hrow_left LEFT_CONTROL NUMBER_3  &hrow_left LEFT_SHIFT NUMBER_4  &kp N5    &trans  &kp N6            &hrow_right RIGHT_SHIFT NUMBER_7  &hrow_right RIGHT_CONTROL N8  &hrow_right RIGHT_ALT N9  &hrow_right RIGHT_GUI NUMBER_0  &trans
+&trans  &trans                        &trans                        &trans                            &trans                          &trans    &trans  &trans            &trans                            &trans                        &trans                    &trans                          &trans
+&trans  &trans                        &trans                        &trans                            &trans                          &trans    &trans  &trans            &trans                            &trans                        &trans                    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
