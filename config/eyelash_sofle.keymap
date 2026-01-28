@@ -148,11 +148,11 @@
 
         layer0 {
             bindings = <
-&none          &none                  &none                  &none                      &none                    &none        &mmv MOVE_UP     &none      &none                      &none                &none                    &none                            &none
-&kp ESCAPE     &kp Q                  &kp W                  &kp E                      &kp R                    &kp T        &mmv MOVE_DOWN   &kp Y      &kp U                      &kp I                &kp O                    &kp P                            &capsw_tog 4
-&kp BACKSPACE  &hrow_left LEFT_GUI A  &hrow_left LEFT_ALT S  &hrow_left LEFT_CONTROL D  &hrow_left LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT   &kp H      &hrow_right RIGHT_SHIFT J  &hrow_right RCTRL K  &hrow_right RIGHT_ALT L  &hrow_right RIGHT_GUI SEMICOLON  &kp APOS
-&lt 3 GRAVE    &kp Z                  &kp X                  &kp C                      &kp V                    &kp B        &mmv MOVE_RIGHT  &kp N      &kp M                      &kp COMMA            &kp DOT                  &kp FSLH                         &kp BACKSLASH
-&kp C_MUTE     &none                  &none                  &kp LEFT_GUI               &lt 1 TAB                &kp SPACE    &mkp LCLK        &kp ENTER  &lt 2 DELETE               &kp RIGHT_ALT        &none                    &none
+&none          &none  &none                  &none                      &none                    &none        &mmv MOVE_UP     &none      &none                      &none                &none                    &none     &none
+&kp ESCAPE     &kp Q  &kp W                  &kp E                      &kp R                    &kp T        &mmv MOVE_DOWN   &kp Y      &kp U                      &kp I                &kp O                    &kp P     &capsw_tog 4
+&kp BACKSPACE  &kp A  &hrow_left LEFT_GUI S  &hrow_left LEFT_CONTROL D  &hrow_left LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT   &kp H      &hrow_right RIGHT_SHIFT J  &hrow_right RCTRL K  &hrow_right RIGHT_GUI L  &kp SEMI  &kp APOS
+&lt 3 GRAVE    &kp Z  &kp X                  &kp C                      &kp V                    &kp B        &mmv MOVE_RIGHT  &kp N      &kp M                      &kp COMMA            &kp DOT                  &kp FSLH  &kp BACKSLASH
+&kp C_MUTE     &none  &none                  &kp LEFT_GUI               &lt 1 TAB                &kp SPACE    &mkp LCLK        &kp ENTER  &lt 2 DELETE               &kp RIGHT_ALT        &none                    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
