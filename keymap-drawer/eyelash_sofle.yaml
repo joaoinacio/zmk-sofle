@@ -331,3 +331,4 @@ combos:
   l: [LAYER0]
 - p: [56, 55]
   k: $$mdi:keyboard-esc$$
+  l: [LAYER0, lower, nav]
