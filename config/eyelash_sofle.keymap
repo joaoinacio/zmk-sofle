@@ -125,6 +125,17 @@
         hold-trigger-on-release;
     };
 
+    ht_sk: ht_sk {
+        compatible = "zmk,behavior-hold-tap";
+        label = "Hold-tap sticky key";
+        bindings = <&sk>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <250>;
+        flavor = "tap-preferred";
+        require-prior-idle-ms = <100>;
+    };
+
     behaviors {
     };
 
