@@ -38,7 +38,7 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: RIGHT GUI, s: ':'}
+  - {t: ;, h: '$$mdi:apple-keyboard-command$$', s: ':'}
   - {t: '''', s: '"'}
   - {t: '`', h: '$$mdi:apple-keyboard-shift$$', s: '~'}
   - Z
@@ -103,7 +103,7 @@ layers:
   - {t: '7', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '8', h: '$$mdi:apple-keyboard-control$$', s: '*'}
   - {t: '9', h: '$$mdi:apple-keyboard-option$$', s: (}
-  - {t: '0', h: RIGHT GUI}
+  - {t: '0', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -329,3 +329,5 @@ combos:
 - p: [0, 39]
   k: '&soft_off'
   l: [LAYER0]
+- p: [56, 55]
+  k: $$mdi:keyboard-esc$$
