@@ -34,7 +34,11 @@
     tapping-term-ms = <280>;
 };
 
-&lt { flavor = "balanced"; };
+&lt { 
+    tapping-term-ms = <200>;
+    quick-tap-ms = <140>;
+    require-prior-idle-ms = <0>;
+};
 
 &sl { release-after-ms = <3000>; };
 
