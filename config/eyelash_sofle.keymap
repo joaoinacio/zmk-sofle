@@ -34,7 +34,7 @@
     tapping-term-ms = <280>;
 };
 
-&lt { 
+&lt {
     tapping-term-ms = <200>;
     quick-tap-ms = <140>;
     require-prior-idle-ms = <0>;
@@ -190,11 +190,11 @@
 
         lower {
             bindings = <
-&trans  &trans                          &trans                          &trans                              &trans                            &trans    &trans  &trans            &trans                             &trans                         &trans                    &trans                          &trans
-&trans  &trans                          &trans                          &trans                              &trans                            &trans    &trans  &kp GREATER_THAN  &kp MINUS                          &kp EQUAL                      &kp LBKT                  &kp RBKT                        &trans
-&trans  &hrow_l_fast LEFT_GUI NUMBER_1  &hrow_l_fast LEFT_ALT NUMBER_2  &hrow_l_fast LEFT_CONTROL NUMBER_3  &hrow_l_fast LEFT_SHIFT NUMBER_4  &kp N5    &trans  &kp N6            &hrow_r_fast RIGHT_SHIFT NUMBER_7  &hrow_r_fast RIGHT_CONTROL N8  &hrow_r_fast LEFT_ALT N9  &hrow_r_fast LEFT_GUI NUMBER_0  &trans
-&trans  &trans                          &trans                          &trans                              &trans                            &trans    &trans  &trans            &trans                             &trans                         &trans                    &trans                          &trans
-&trans  &trans                          &trans                          &trans                              &trans                            &trans    &trans  &trans            &trans                             &trans                         &trans                    &trans
+&trans  &trans                     &trans                     &trans                         &trans                            &trans    &trans  &trans            &trans                             &trans                    &trans               &trans                     &trans
+&trans  &trans                     &trans                     &trans                         &trans                            &trans    &trans  &kp GREATER_THAN  &kp MINUS                          &kp EQUAL                 &kp LBKT             &kp RBKT                   &trans
+&trans  &hrow_l LEFT_GUI NUMBER_1  &hrow_l LEFT_ALT NUMBER_2  &hrow_l LEFT_CONTROL NUMBER_3  &hrow_l_fast LEFT_SHIFT NUMBER_4  &kp N5    &trans  &kp N6            &hrow_r_fast RIGHT_SHIFT NUMBER_7  &hrow_r RIGHT_CONTROL N8  &hrow_r LEFT_ALT N9  &hrow_r LEFT_GUI NUMBER_0  &trans
+&trans  &trans                     &trans                     &trans                         &trans                            &trans    &trans  &trans            &trans                             &trans                    &trans               &trans                     &trans
+&trans  &trans                     &trans                     &trans                         &trans                            &trans    &trans  &trans            &trans                             &trans                    &trans               &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
