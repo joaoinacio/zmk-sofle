@@ -167,9 +167,9 @@
         lower {
             bindings = <
 &trans  &trans                     &trans                     &trans                         &trans                             &trans    &trans  &trans            &trans                              &trans                    &trans               &trans                     &trans
-&trans  &trans                     &trans                     &trans                         &trans                             &trans    &trans  &kp GREATER_THAN  &kp MINUS                           &kp EQUAL                 &kp LBKT             &kp RBKT                   &trans
+&trans  &trans                     &trans                     &trans                         &trans                             &trans    &trans  &kp GREATER_THAN  &kp MINUS                           &kp EQUAL                 &trans               &trans                     &trans
 &trans  &hrow_l LEFT_GUI NUMBER_1  &hrow_l LEFT_ALT NUMBER_2  &hrow_l LEFT_CONTROL NUMBER_3  &hr_l_fast_sk LEFT_SHIFT NUMBER_4  &kp N5    &trans  &kp N6            &hr_r_fast_sk RIGHT_SHIFT NUMBER_7  &hrow_r RIGHT_CONTROL N8  &hrow_r LEFT_ALT N9  &hrow_r LEFT_GUI NUMBER_0  &trans
-&trans  &trans                     &trans                     &trans                         &trans                             &trans    &trans  &trans            &trans                              &trans                    &trans               &trans                     &trans
+&trans  &trans                     &trans                     &trans                         &trans                             &trans    &trans  &trans            &trans                              &trans                    &kp LEFT_BRACKET     &kp RIGHT_BRACKET          &trans
 &trans  &trans                     &trans                     &trans                         &trans                             &trans    &trans  &trans            &trans                              &trans                    &trans               &trans
             >;
 
