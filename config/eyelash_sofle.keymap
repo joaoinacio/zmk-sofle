@@ -124,8 +124,7 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <56 55>;
-            slow-release;
+            key-positions = <56 60>;
             layers = <0 1 2>;
         };
     };
