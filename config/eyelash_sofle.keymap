@@ -120,12 +120,7 @@
             bindings = <&soft_off>;
             key-positions = <0 39>;
             layers = <0>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <56 60>;
-            layers = <0 1 2>;
+            timeout-ms = <3000>;
         };
     };
 
