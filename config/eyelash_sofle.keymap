@@ -28,10 +28,10 @@
 &soft_off { hold-time-ms = <2000>; };
 
 &mt {
-    flavor = "balanced";
-    quick-tap-ms = <150>;
-    require-prior-idle-ms = <150>;
-    tapping-term-ms = <280>;
+    flavor = "tap-preferred";
+    quick-tap-ms = <110>;
+    require-prior-idle-ms = <(-1)>;
+    tapping-term-ms = <220>;
 };
 
 &lt {
@@ -110,6 +110,12 @@
         hold-trigger-on-release;
     };
 
+    tog_on: tog_on {
+        compatible = "zmk,behavior-toggle-layer";
+        label = "Toggle layer on";
+        #binding-cells = <1>;
+    };
+
     behaviors {
     };
 
@@ -181,11 +187,11 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans    &trans         &trans        &trans     &trans
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &trans  &kp F7      &kp F8    &kp F9         &kp F10       &kp F11    &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp INSERT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp PRINTSCREEN
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans    &trans         &trans        &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans      &trans    &trans         &trans        &trans     &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F6    &trans  &kp F7      &kp F8    &kp F9         &kp F10       &kp F11    &kp F12
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans      &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &kp INSERT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp PRINTSCREEN
+&trans  &trans  &trans  &trans  &tog_on 2  &trans    &trans  &trans      &trans    &trans         &trans        &trans
             >;
 
             display-name = "nav";
@@ -207,7 +213,7 @@
         caps_colemak {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans             &trans  &trans            &trans             &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans             &trans  &trans            &trans             &tap_tog P 4       &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans             &trans  &trans            &trans             &trans             &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans             &trans  &trans            &trans             &kp LS(SEMICOLON)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans             &trans  &tap_tog COMMA 4  &tap_tog PERIOD 4  &tap_tog FSLH 4    &tap_tog BACKSLASH 4
 &trans  &trans  &trans  &trans  &trans  &tap_tog SPACE 4    &trans  &tap_tog RETURN 4  &trans  &trans            &trans             &trans
