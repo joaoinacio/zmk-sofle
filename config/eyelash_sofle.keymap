@@ -178,7 +178,7 @@
 &trans  &trans                        &trans                        &trans                            &trans                             &trans    &trans  &kp GREATER_THAN  &kp MINUS                           &kp EQUAL                    &trans                  &trans                        &trans
 &trans  &hr_l_slow LEFT_GUI NUMBER_1  &hr_l_slow LEFT_ALT NUMBER_2  &hr_l_slow LEFT_CONTROL NUMBER_3  &hr_l_fast_sk LEFT_SHIFT NUMBER_4  &kp N5    &trans  &kp N6            &hr_r_fast_sk RIGHT_SHIFT NUMBER_7  &hr_r_slow RIGHT_CONTROL N8  &hr_r_slow LEFT_ALT N9  &hr_r_slow LEFT_GUI NUMBER_0  &trans
 &trans  &trans                        &trans                        &trans                            &trans                             &trans    &trans  &trans            &trans                              &trans                       &kp LEFT_BRACKET        &kp RIGHT_BRACKET             &trans
-&trans  &trans                        &trans                        &trans                            &trans                             &trans    &trans  &trans            &trans                              &trans                       &trans                  &trans
+&trans  &trans                        &trans                        &trans                            &trans                             &trans    &trans  &trans            &tog_on 1                           &trans                       &trans                  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
