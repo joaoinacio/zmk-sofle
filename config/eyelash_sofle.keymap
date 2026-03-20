@@ -119,16 +119,7 @@
     behaviors {
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <0 39>;
-            layers = <0>;
-            timeout-ms = <3000>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         capsw_tog: capsw_tog {
@@ -162,7 +153,7 @@
         layer0 {
             bindings = <
 &none                 &none                  &none                  &none                      &none                       &none        &mmv MOVE_UP     &none      &none                        &none               &none                  &none                     &none
-&kp_to ESCAPE 1       &kp Q                  &kp W                  &kp E                      &kp R                       &kp T        &mmv MOVE_DOWN   &kp Y      &kp U                        &kp I               &kp O                  &kp P                     &capsw_tog 4
+&kp_to ESCAPE 0       &kp Q                  &kp W                  &kp E                      &kp R                       &kp T        &mmv MOVE_DOWN   &kp Y      &kp U                        &kp I               &kp O                  &kp P                     &capsw_tog 4
 &kp BACKSPACE         &hr_l_slow LEFT_GUI A  &hr_l_slow LEFT_ALT S  &hr_l_slow LEFT_CONTROL D  &hr_l_fast_sk LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT   &kp H      &hr_r_fast_sk RIGHT_SHIFT J  &hr_r_slow RCTRL K  &hr_r_slow LEFT_ALT L  &hr_r_slow LEFT_GUI SEMI  &kp APOS
 &mt LEFT_SHIFT GRAVE  &kp Z                  &kp X                  &kp C                      &kp V                       &kp B        &mmv MOVE_RIGHT  &kp N      &kp M                        &kp COMMA           &kp DOT                &kp FSLH                  &mt RIGHT_SHIFT BACKSLASH
 &kp C_MUTE            &none                  &none                  &lt 3 LEFT_GUI             &lt 1 TAB                   &kp SPACE    &mkp LCLK        &kp ENTER  &lt 2 DELETE                 &kp RIGHT_ALT       &none                  &none
