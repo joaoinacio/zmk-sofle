@@ -14,7 +14,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&kp_to ESCAPE 1'
+  - '&kp_to ESCAPE 0'
   - Q
   - W
   - E
@@ -325,7 +325,3 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [0, 39]
-  k: '&soft_off'
-  l: [LAYER0]
