@@ -114,6 +114,7 @@
         compatible = "zmk,behavior-toggle-layer";
         label = "Toggle layer on";
         #binding-cells = <1>;
+        toggle-mode = "on";
     };
 
     behaviors {
