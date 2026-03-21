@@ -60,35 +60,35 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    hr_r_slow: hr_r_slow {
+    mt_home_r_slow: mt_home_r_slow {
         compatible = "zmk,behavior-hold-tap";
-        label = "HR_R_SLOW";
+        label = "MT_HOME_R_SLOW";
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <260>;
+        tapping-term-ms = <280>;
         require-prior-idle-ms = <120>;
         flavor = "tap-preferred";
         hold-trigger-key-positions = <13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44 53 54 55 56 57 59 60>;
         hold-trigger-on-release;
     };
 
-    hr_l_slow: hr_l_slow {
+    mt_home_l_slow: mt_home_l_slow {
         compatible = "zmk,behavior-hold-tap";
-        label = "HR_L_SLOW";
+        label = "MT_HOME_L_SLOW";
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <250>;
+        tapping-term-ms = <280>;
         require-prior-idle-ms = <120>;
         flavor = "tap-preferred";
         hold-trigger-key-positions = <59 60 59 56 57 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 60 61 62 63>;
         hold-trigger-on-release;
     };
 
-    hr_r_fast_sk: hr_r_fast_sk {
+    mt_home_r_fast_sk: mt_home_r_fast_sk {
         compatible = "zmk,behavior-hold-tap";
-        label = "HR_R_FAST_SK";
+        label = "MT_HOME_R_FAST_SK";
         bindings = <&sk>, <&kp>;
 
         #binding-cells = <2>;
@@ -98,9 +98,9 @@
         hold-trigger-on-release;
     };
 
-    hr_l_fast_sk: hr_l_fast_sk {
+    mt_home_l_fast_sk: mt_home_l_fast_sk {
         compatible = "zmk,behavior-hold-tap";
-        label = "HR_L_FAST_SK";
+        label = "MT_HOME_L_FAST_SK";
         bindings = <&sk>, <&kp>;
 
         #binding-cells = <2>;
@@ -153,11 +153,11 @@
 
         layer0 {
             bindings = <
-&none                 &none                  &none                  &none                      &none                       &none        &mmv MOVE_UP     &none      &none                        &none               &none                  &none                     &none
-&kp_to ESCAPE 0       &kp Q                  &kp W                  &kp E                      &kp R                       &kp T        &mmv MOVE_DOWN   &kp Y      &kp U                        &kp I               &kp O                  &kp P                     &capsw_tog 4
-&kp BACKSPACE         &hr_l_slow LEFT_GUI A  &hr_l_slow LEFT_ALT S  &hr_l_slow LEFT_CONTROL D  &hr_l_fast_sk LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT   &kp H      &hr_r_fast_sk RIGHT_SHIFT J  &hr_r_slow RCTRL K  &hr_r_slow LEFT_ALT L  &hr_r_slow LEFT_GUI SEMI  &kp APOS
-&mt LEFT_SHIFT GRAVE  &kp Z                  &kp X                  &kp C                      &kp V                       &kp B        &mmv MOVE_RIGHT  &kp N      &kp M                        &kp COMMA           &kp DOT                &kp FSLH                  &mt RIGHT_SHIFT BACKSLASH
-&kp C_MUTE            &none                  &none                  &lt 3 LEFT_GUI             &lt 1 TAB                   &kp SPACE    &mkp LCLK        &kp ENTER  &lt 2 DELETE                 &kp RIGHT_ALT       &none                  &none
+&none                 &none                       &none                       &none                           &none                            &none        &mmv MOVE_UP    &none      &none                             &none                    &none                       &none                          &none
+&kp_to ESCAPE 0       &kp Q                       &kp W                       &kp E                           &kp R                            &kp T        &mmv MOVE_DOWN  &kp Y      &kp U                             &kp I                    &kp O                       &kp P                          &capsw_tog 4
+&kp BACKSPACE         &mt_home_l_slow LEFT_GUI A  &mt_home_l_slow LEFT_ALT S  &mt_home_l_slow LEFT_CONTROL D  &mt_home_l_fast_sk LEFT_SHIFT F  &kp G        &mmv MOVE_LEFT  &kp H      &mt_home_r_fast_sk RIGHT_SHIFT J  &mt_home_r_slow RCTRL K  &mt_home_r_slow LEFT_ALT L  &mt_home_r_slow LEFT_GUI SEMI  &kp APOS
+&mt LEFT_SHIFT GRAVE  &kp Z                       &kp X                       &kp C                           &kp V                            &kp B        &msc SCRL_DOWN  &kp N      &kp M                             &kp COMMA                &kp DOT                     &kp FSLH                       &mt RIGHT_SHIFT BACKSLASH
+&kp C_MUTE            &none                       &none                       &lt 3 LEFT_GUI                  &lt 1 TAB                        &kp SPACE    &mkp LCLK       &kp ENTER  &lt 2 DELETE                      &kp RIGHT_ALT            &none                       &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -166,11 +166,11 @@
 
         lower {
             bindings = <
-&trans  &trans                        &trans                        &trans                            &trans                             &trans    &trans  &trans            &trans                              &trans                       &trans                  &trans                        &trans
-&trans  &trans                        &trans                        &trans                            &trans                             &trans    &trans  &kp GREATER_THAN  &kp MINUS                           &kp EQUAL                    &trans                  &trans                        &trans
-&trans  &hr_l_slow LEFT_GUI NUMBER_1  &hr_l_slow LEFT_ALT NUMBER_2  &hr_l_slow LEFT_CONTROL NUMBER_3  &hr_l_fast_sk LEFT_SHIFT NUMBER_4  &kp N5    &trans  &kp N6            &hr_r_fast_sk RIGHT_SHIFT NUMBER_7  &hr_r_slow RIGHT_CONTROL N8  &hr_r_slow LEFT_ALT N9  &hr_r_slow LEFT_GUI NUMBER_0  &trans
-&trans  &trans                        &trans                        &trans                            &trans                             &trans    &trans  &trans            &trans                              &trans                       &kp LEFT_BRACKET        &kp RIGHT_BRACKET             &trans
-&trans  &trans                        &trans                        &trans                            &trans                             &trans    &trans  &trans            &tog_on 1                           &trans                       &trans                  &trans
+&trans  &trans                             &trans                             &trans                                 &trans                                  &trans    &trans  &trans            &trans                                   &trans                            &trans                       &trans                             &trans
+&trans  &trans                             &trans                             &trans                                 &trans                                  &trans    &trans  &kp GREATER_THAN  &kp MINUS                                &kp EQUAL                         &trans                       &trans                             &trans
+&trans  &mt_home_l_slow LEFT_GUI NUMBER_1  &mt_home_l_slow LEFT_ALT NUMBER_2  &mt_home_l_slow LEFT_CONTROL NUMBER_3  &mt_home_l_fast_sk LEFT_SHIFT NUMBER_4  &kp N5    &trans  &kp N6            &mt_home_r_fast_sk RIGHT_SHIFT NUMBER_7  &mt_home_r_slow RIGHT_CONTROL N8  &mt_home_r_slow LEFT_ALT N9  &mt_home_r_slow LEFT_GUI NUMBER_0  &trans
+&trans  &trans                             &trans                             &trans                                 &trans                                  &trans    &trans  &trans            &trans                                   &trans                            &kp LEFT_BRACKET             &kp RIGHT_BRACKET                  &trans
+&trans  &trans                             &trans                             &trans                                 &trans                                  &trans    &trans  &trans            &tog_on 1                                &trans                            &trans                       &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
