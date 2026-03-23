@@ -15,7 +15,7 @@
 
 &msc {
     acceleration-exponent = <0>;      // 0
-    time-to-max-speed-ms = <500>;     // 300
+    time-to-max-speed-ms = <600>;     // 300
     delay-ms = <50>;                   // 0
 };
 
@@ -154,7 +154,7 @@
         layer0 {
             bindings = <
 &none                 &none                       &none                       &none                           &none                            &none        &mmv MOVE_UP    &none      &none                             &none                    &none                       &none                          &none
-&kp_to ESCAPE 0       &kp Q                       &kp W                       &kp E                           &kp R                            &kp T        &mmv MOVE_DOWN  &kp Y      &kp U                             &kp I                    &kp O                       &kp P                          &capsw_tog 4
+&kp_to ESCAPE 0       &kp Q                       &kp W                       &kp E                           &kp R                            &kp T        &msc SCRL_DOWN  &kp Y      &kp U                             &kp I                    &kp O                       &kp P                          &capsw_tog 4
 &kp BACKSPACE         &mt_home_l_slow LEFT_GUI A  &mt_home_l_slow LEFT_ALT S  &mt_home_l_slow LEFT_CONTROL D  &mt_home_l_fast_sk LEFT_SHIFT F  &kp G        &msc SCRL_UP    &kp H      &mt_home_r_fast_sk RIGHT_SHIFT J  &mt_home_r_slow RCTRL K  &mt_home_r_slow LEFT_ALT L  &mt_home_r_slow LEFT_GUI SEMI  &kp APOS
 &mt LEFT_SHIFT GRAVE  &kp Z                       &kp X                       &kp C                           &kp V                            &kp B        &msc SCRL_DOWN  &kp N      &kp M                             &kp COMMA                &kp DOT                     &kp FSLH                       &mt RIGHT_SHIFT BACKSLASH
 &kp C_MUTE            &none                       &none                       &lt 3 LEFT_GUI                  &lt 1 TAB                        &kp SPACE    &mkp LCLK       &kp ENTER  &lt 2 DELETE                      &kp RIGHT_ALT            &none                       &none
@@ -173,7 +173,6 @@
 &trans  &trans                             &trans                             &trans                                 &trans                                  &trans    &trans  &trans            &tog_on 1                                &trans                            &trans                       &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
             label = "lower";
         };
 
@@ -192,11 +191,11 @@
 
         sys {
             bindings = <
-&trans  &trans        &trans        &trans  &trans       &trans        &trans  &trans           &trans           &trans           &trans           &trans           &trans
-&trans  &out OUT_USB  &out OUT_BLE  &trans  &bootloader  &sys_reset    &trans  &sys_reset       &bootloader      &trans           &trans           &trans           &trans
-&trans  &trans        &trans        &trans  &trans       &trans        &trans  &rgb_ug RGB_ON   &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &trans
-&trans  &trans        &trans        &trans  &trans       &trans        &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &trans
-&trans  &trans        &trans        &trans  &trans       &trans        &trans  &trans           &trans           &trans           &trans           &trans
+&trans       &trans        &trans        &trans  &trans     &trans       &mmv MOVE_UP     &trans           &trans           &trans           &trans           &trans           &trans
+&bootloader  &out OUT_USB  &out OUT_BLE  &trans  &trans     &trans       &mmv MOVE_DOWN   &trans           &trans           &trans           &trans           &trans           &bootloader
+&trans       &trans        &trans        &trans  &mkp LCLK  &mkp RCLK    &mmv MOVE_LEFT   &rgb_ug RGB_ON   &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &trans
+&trans       &trans        &trans        &trans  &trans     &trans       &mmv MOVE_RIGHT  &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &trans
+&trans       &trans        &trans        &trans  &trans     &trans       &mkp LCLK        &trans           &trans           &trans           &trans           &trans
             >;
 
             label = "sys";
