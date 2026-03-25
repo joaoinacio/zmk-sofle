@@ -39,6 +39,11 @@
 
 &sl { release-after-ms = <3000>; };
 
+&sk {
+    quick-release;
+    release-after-ms = <2000>;
+};
+
 / {
     mt_home_r_slow: mt_home_r_slow {
         compatible = "zmk,behavior-hold-tap";
@@ -119,7 +124,7 @@
     combos { compatible = "zmk,combos"; };
 
     macros {
-        capsw_tog: capsw_tog {
+        caps_w_tog: caps_w_tog {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -149,11 +154,11 @@
 
         layer0 {
             bindings = <
-&none                 &none                       &none                       &none                           &none                            &none        &msc SCRL_UP     &none      &none                             &none                    &none                       &none                          &none
-&kp_to ESCAPE 0       &kp Q                       &kp W                       &kp E                           &kp R                            &kp T        &msc SCRL_DOWN   &kp Y      &kp U                             &kp I                    &kp O                       &kp P                          &capsw_tog 4
-&kp BACKSPACE         &mt_home_l_slow LEFT_GUI A  &mt_home_l_slow LEFT_ALT S  &mt_home_l_slow LEFT_CONTROL D  &mt_home_l_fast_sk LEFT_SHIFT F  &kp G        &msc SCRL_LEFT   &kp H      &mt_home_r_fast_sk RIGHT_SHIFT J  &mt_home_r_slow RCTRL K  &mt_home_r_slow LEFT_ALT L  &mt_home_r_slow LEFT_GUI SEMI  &kp APOS
-&mt LEFT_SHIFT GRAVE  &kp Z                       &kp X                       &kp C                           &kp V                            &kp B        &msc SCRL_RIGHT  &kp N      &kp M                             &kp COMMA                &kp DOT                     &kp FSLH                       &mt RIGHT_SHIFT BACKSLASH
-&kp C_MUTE            &none                       &none                       &lt 3 LEFT_GUI                  &lt 1 TAB                        &kp SPACE    &mkp LCLK        &kp ENTER  &lt 2 DELETE                      &kp RIGHT_ALT            &none                       &none
+&none            &none                       &none                       &none                           &none                            &none        &msc SCRL_UP     &none      &none                             &none                    &none                       &none                          &none
+&kp_to ESCAPE 0  &kp Q                       &kp W                       &kp E                           &kp R                            &kp T        &msc SCRL_DOWN   &kp Y      &kp U                             &kp I                    &kp O                       &kp P                          &caps_w_tog 4
+&kp BACKSPACE    &mt_home_l_slow LEFT_GUI A  &mt_home_l_slow LEFT_ALT S  &mt_home_l_slow LEFT_CONTROL D  &mt_home_l_fast_sk LEFT_SHIFT F  &kp G        &msc SCRL_LEFT   &kp H      &mt_home_r_fast_sk RIGHT_SHIFT J  &mt_home_r_slow RCTRL K  &mt_home_r_slow LEFT_ALT L  &mt_home_r_slow LEFT_GUI SEMI  &kp APOS
+&kp GRAVE        &kp Z                       &kp X                       &kp C                           &kp V                            &kp B        &msc SCRL_RIGHT  &kp N      &kp M                             &kp COMMA                &kp DOT                     &kp FSLH                       &kp BACKSLASH
+&kp C_MUTE       &none                       &none                       &lt 3 LEFT_GUI                  &lt 1 TAB                        &kp SPACE    &mkp LCLK        &kp ENTER  &lt 2 DELETE                      &kp RIGHT_ALT            &none                       &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -176,7 +181,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans      &trans    &trans         &trans        &trans     &trans
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F6    &trans  &kp F7      &kp F8    &kp F9         &kp F10       &kp F11    &kp F12
-&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans      &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans      &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp ESCAPE
 &trans  &trans  &trans  &trans  &trans     &trans    &trans  &kp INSERT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp PRINTSCREEN
 &trans  &trans  &trans  &trans  &tog_on 2  &trans    &trans  &trans      &trans    &trans         &trans        &trans
             >;
