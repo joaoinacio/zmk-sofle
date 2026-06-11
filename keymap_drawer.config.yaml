@@ -198,6 +198,25 @@ parse_config:
       tap: $$mdi:mouse-right-click-outline$$
     "&mkp MCLK":
       tap: $$mdi:mouse-scroll-wheel$$
+    # Custom behaviors (eyelash_sofle)
+    "&td_capsw_caps":
+      tap: $$mdi:alpha-w-box$$
+      shifted: $$mdi:apple-keyboard-caps$$
+    "&capsw": $$mdi:alpha-w-box$$
+    "&nav_autolayer 2":
+      tap: nav
+      shifted: $$mdi:lock$$
+    "&num_autolayer 1":
+      tap: '123'
+      shifted: $$mdi:lock$$
+    "&kp_to ESCAPE 0":
+      tap: $$mdi:keyboard-esc$$
+      hold: $$mdi:layers-triple$$
+    "&lt 6 GRAVE":
+      tap: "`"
+      hold: $$mdi:layers-triple$$
+      shifted: "~"
+
     # Modifiers
     "&caps_word": $$mdi:alpha-w-box$$
     "&kt RSHIFT":
