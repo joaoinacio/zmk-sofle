@@ -49,14 +49,14 @@ layers:
   - $$mdi:pan-right$$
   - N
   - M
-  - {t: ',', h: '$$mdi:apple-keyboard-shift$$', s: <}
+  - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: \, s: '|'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-tab$$', h: lower}
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
