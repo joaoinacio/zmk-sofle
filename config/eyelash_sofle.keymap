@@ -205,11 +205,11 @@
 
         nav {
             bindings = <
-&trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans     &trans    &trans         &trans        &trans     &trans
-&trans  &trans        &trans        &trans            &trans          &trans    &trans  &kp LG(X)  &trans    &trans         &trans        &trans     &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp LG(C)  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans        &trans        &trans            &trans          &trans    &trans  &kp LG(V)  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &trans
-&trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans     &trans    &trans         &trans        &trans
+&trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans  &trans    &trans         &trans        &trans     &trans
+&trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans  &trans    &trans         &trans        &trans     &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &trans  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &trans
+&trans  &trans        &trans        &trans            &trans          &trans    &trans  &trans  &trans    &trans         &trans        &trans
             >;
 
             display-name = "nav";
@@ -262,11 +262,6 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-
-        lower-nav-func {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
 
         capsw-lower {
             if-layers = <1 5>;
