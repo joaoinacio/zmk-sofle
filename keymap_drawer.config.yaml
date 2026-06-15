@@ -113,7 +113,7 @@ parse_config:
   mark_alternate_layer_activators: true
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
-    tap: $$mdi:transfer$$
+    tap: ""
     type: trans
 
   raw_binding_map:
@@ -199,7 +199,7 @@ parse_config:
     "&mkp MCLK":
       tap: $$mdi:mouse-scroll-wheel$$
     # Custom behaviors (eyelash_sofle)
-    "&td_capsw_caps":
+    "&td_capsw_lock":
       tap: $$mdi:alpha-w-box$$
       shifted: $$mdi:apple-keyboard-caps$$
     "&capsw": $$mdi:alpha-w-box$$
