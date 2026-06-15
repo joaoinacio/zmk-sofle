@@ -151,7 +151,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -164,7 +164,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {type: trans}
   - {type: trans}
-  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
+  - {type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -177,7 +177,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  - {type: trans}
   - HOME
   - PgDn
   - PgUp
@@ -252,11 +252,11 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - {type: held alternate}
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: held alternate}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
