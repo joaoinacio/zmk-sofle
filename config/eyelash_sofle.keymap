@@ -193,11 +193,11 @@
 
         lower {
             bindings = <
-&trans  &trans                          &trans                          &trans                              &trans                       &trans    &trans  &trans  &trans                        &trans                         &trans                    &trans                          &trans
-&trans  &trans                          &trans                          &trans                              &trans                       &trans    &trans  &trans  &kp MINUS                     &kp EQUAL                      &kp LEFT_BRACE            &kp RIGHT_BRACE                 &trans
-&trans  &mt_h_L_slow LEFT_GUI NUMBER_1  &mt_h_L_slow LEFT_ALT NUMBER_2  &mt_h_L_slow LEFT_CONTROL NUMBER_3  &mt_h_L LEFT_SHIFT NUMBER_4  &kp N5    &trans  &kp N6  &mt_h_R RIGHT_SHIFT NUMBER_7  &mt_h_R_slow RIGHT_CONTROL N8  &mt_h_R_slow LEFT_ALT N9  &mt_h_R_slow LEFT_GUI NUMBER_0  &trans
-&trans  &trans                          &trans                          &trans                              &trans                       &trans    &trans  &trans  &trans                        &trans                         &trans                    &trans                          &trans
-&trans  &trans                          &trans                          &trans                              &trans                       &trans    &trans  &trans  &trans                        &trans                         &trans                    &trans
+&trans  &trans                    &trans                    &trans                        &trans                 &trans    &trans  &trans  &trans                  &trans                         &trans                    &trans                    &trans
+&trans  &trans                    &trans                    &trans                        &trans                 &trans    &trans  &trans  &kp MINUS               &kp EQUAL                      &kp LEFT_BRACE            &kp RIGHT_BRACE           &trans
+&trans  &mt_h_L_slow LEFT_GUI N1  &mt_h_L_slow LEFT_ALT N2  &mt_h_L_slow LEFT_CONTROL N3  &mt_h_L LEFT_SHIFT N4  &kp N5    &trans  &kp N6  &mt_h_R RIGHT_SHIFT N7  &mt_h_R_slow RIGHT_CONTROL N8  &mt_h_R_slow LEFT_ALT N9  &mt_h_R_slow LEFT_GUI N0  &trans
+&trans  &trans                    &trans                    &trans                        &trans                 &trans    &trans  &trans  &trans                  &trans                         &trans                    &trans                    &trans
+&trans  &trans                    &trans                    &trans                        &trans                 &trans    &trans  &trans  &trans                  &trans                         &trans                    &trans
             >;
 
             label = "lower";
