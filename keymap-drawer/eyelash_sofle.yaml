@@ -89,8 +89,8 @@ layers:
   - {type: trans}
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - '{'
-  - '}'
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {type: trans}
   - {type: trans}
   - {t: '1', h: '$$mdi:apple-keyboard-command$$', s: '!'}
