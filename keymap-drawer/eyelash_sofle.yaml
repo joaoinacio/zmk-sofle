@@ -287,7 +287,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
+  - {type: held}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -300,7 +300,7 @@ layers:
   - RGB BRI
   - RGB HUI
   - {type: trans}
-  - {type: held}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -456,6 +456,6 @@ layers:
   - {type: trans}
   - {type: trans}
 combos:
-- p: [39, 13]
+- p: [13, 26]
   k: sys
   l: [base]
