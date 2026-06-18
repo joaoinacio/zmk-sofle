@@ -56,13 +56,13 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - func
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-tab$$', h: lower}
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace-reverse-outline$$', h: nav}
-  - $$mdi:apple-keyboard-option$$
+  - func
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   lower:
@@ -226,8 +226,8 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-right-click-outline$$
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - F5
@@ -251,13 +251,13 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
   - {type: trans}
   - {type: trans}
   sys:
